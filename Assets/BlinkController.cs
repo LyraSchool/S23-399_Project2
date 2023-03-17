@@ -7,10 +7,15 @@ public class BlinkController : MonoBehaviour
     
     
     [SerializeField]
-    private float blinkTime = 0.5f;
+    private float blinkTime = 0.15f;
     
     [SerializeField]
     private bool invertBlink = false;
+    
+    [SerializeField]
+    private float maxTimeBetweenBlinks = 1f;
+    
+    private float timeSinceLastBlink = 0f;
     
     private float blinkTimeLeft = 0f;
     
@@ -20,17 +25,11 @@ public class BlinkController : MonoBehaviour
     [SerializeField]
     private VisibilityController visibility;
     
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
+    private void Start() => visibility.SetVisibility(false);
+    
     // Update is called once per frame
-    void Update()
+    private void Update()
     {
-        Debug.Log(controller.isHuntingOrFakeHunting);
-        
         if (controller.isHuntingOrFakeHunting)
         {
             
@@ -46,7 +45,12 @@ public class BlinkController : MonoBehaviour
             }
             else
             {
-                blinkTimeLeft = Random.Range(0, 100) == 0 ? blinkTime : 0f;
+                bool addBlink = Random.Range(0, 50) == 0 || timeSinceLastBlink > maxTimeBetweenBlinks;
+                
+                timeSinceLastBlink = addBlink ? 0f : timeSinceLastBlink + Time.deltaTime;
+                blinkTimeLeft = addBlink ? blinkTime : 0f;
+                
+                visibility.SetVisibility(addBlink && !invertBlink);
             }
         }
         else
