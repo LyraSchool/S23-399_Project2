@@ -39,19 +39,6 @@ public class PlayerCameraController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (tp != lastVal)
-        {
-            lastVal = tp;
-            if (tp)
-            {
-                GoThirdPerson();
-            }
-            else
-            {
-                GoFirstPerson();
-            }
-        }
-
         if (!IsThirdPerson)
         {
             mainCamera.transform.localPosition = transform.position + firstPersonCameraOffset;
@@ -60,13 +47,6 @@ public class PlayerCameraController : MonoBehaviour
     
     public void GoFirstPerson()
     {
-        if (!IsThirdPerson) return;
-
-        // -- DEBUG CODE --
-        tp = false;
-        lastVal = false;
-        
-        IsThirdPerson = false;
         foreach (SkinnedMeshRenderer headRenderer in headRenderers)
         {
             headRenderer.enabled = false;
@@ -87,13 +67,6 @@ public class PlayerCameraController : MonoBehaviour
     
     public void GoThirdPerson()
     {
-        if (IsThirdPerson) return;
-        
-        // -- DEBUG CODE --
-        tp = true;
-        lastVal = true;
-        
-        IsThirdPerson = true;
         foreach (SkinnedMeshRenderer headRenderer in headRenderers)
         {
             headRenderer.enabled = true;
@@ -109,5 +82,16 @@ public class PlayerCameraController : MonoBehaviour
         Vector3 cameraPos = transform.position;
         Vector3 cameraOffset = new Vector3(0, 1f, -2.5f);
         mainCamera.transform.localPosition = cameraPos + cameraOffset;
+    }
+    
+    public void RotateCamera(float x, float y)
+    {
+        Transform mainCameraTransform = mainCamera.transform;
+        mainCameraTransform.Rotate(Vector3.right, y);
+        
+        Vector3 eulerAngles = mainCameraTransform.eulerAngles;
+        eulerAngles.x = Mathf.Clamp(eulerAngles.x, 0, 180);
+        mainCamera.transform.eulerAngles = eulerAngles;
+        
     }
 }
