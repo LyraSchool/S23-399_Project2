@@ -7,18 +7,28 @@ public class PlayerController : MonoBehaviour
 {
     [SerializeField] private float speed = 5f;
     
-    private Rigidbody _rb;
+    //private Rigidbody _rb;
     
     [SerializeField]
     private PlayerCameraController _playerCameraController;
     
+    [SerializeField]
+    private CharacterController _characterController;
     
-    public bool IsThirdPerson { get; private set; }
-
-
+    [SerializeField]
+    private float xSensitivity = 1f;
+    
+    [SerializeField]
+    private float ySensitivity = 1f;
+    
+    
+    
+    private bool tryInteract = false;
+    
+    
     private void Awake()
     {
-        _rb = GetComponent<Rigidbody>();
+        //_rb = GetComponent<Rigidbody>();
     }
 
 
@@ -33,6 +43,26 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
         HandleInput();
+
+        HandleInteractions();
+    }
+
+    private void HandleInteractions()
+    {
+        if (!tryInteract) return;
+        tryInteract = false;
+        
+        // See if we are looking at an interactable object within a certain distance
+        RaycastHit hit;
+        if (Physics.Raycast(_playerCameraController.transform.position, _playerCameraController.transform.forward, out hit, 5f))
+        {
+            // Check if we are looking at an interactable object
+            if (hit.collider.gameObject.GetComponent<InteractableObject>() != null)
+            {
+                // Interact with the object
+                hit.collider.gameObject.GetComponent<InteractableObject>().Interact();
+            }
+        }
     }
 
     private void HandleInput()
@@ -41,36 +71,23 @@ public class PlayerController : MonoBehaviour
         float z = Input.GetAxis("Vertical");
         
         Vector3 moveDir = new Vector3(x, 0, z).normalized;
+        Vector3 movement = transform.TransformDirection(moveDir);
         
-        _rb.velocity = moveDir * speed;
-        
-        // Use 'T' to toggle third person
-        if (Input.GetKeyDown(KeyCode.T))
-        {
-            if (IsThirdPerson)
-            {
-                _playerCameraController.GoFirstPerson();
-            }
-            else
-            {
-                _playerCameraController.GoThirdPerson();
-            }
-        }
+        //_rb.velocity = moveDir * speed;
+        _characterController.Move(speed * Time.deltaTime * movement);
         
         
         float mouseX = Input.GetAxis("Mouse X");
         float mouseY = Input.GetAxis("Mouse Y");
         
         // First person camera and player rotation
-        if (!IsThirdPerson)
+        transform.Rotate(Vector3.up * mouseX);
+        _playerCameraController.RotateCamera(-mouseY, ySensitivity);
+        
+        if (Input.GetKeyDown(KeyCode.E))
         {
-            transform.Rotate(Vector3.up * mouseX);
-            _playerCameraController.RotateCamera(mouseX, mouseY);
+            tryInteract = true;
         }
-        else
-        {
-            
-            _playerCameraController.RotateCamera(mouseX, mouseY);
-        }
+        
     }
 }

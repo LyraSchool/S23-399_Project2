@@ -4,94 +4,53 @@ using UnityEngine;
 
 public class PlayerCameraController : MonoBehaviour
 {
+    // Renderers
+    [SerializeField] private SkinnedMeshRenderer[] headRenderers;
+    [SerializeField] private MeshRenderer[] moreHeadRenderers;
+    [SerializeField] private MeshRenderer cylinderRenderer;
+    
+    
+    private Camera _mainCamera;
 
-    [SerializeField]
-    private SkinnedMeshRenderer[] headRenderers;
+    private float _rotY;
     
-    [SerializeField]
-    private MeshRenderer[] moreHeadRenderers;
-    
-    [SerializeField]
-    private MeshRenderer cylinderRenderer;
-    
-    public bool IsThirdPerson { get; private set; }
-    
-    private Camera mainCamera;
-    
-    
-    private Vector3 firstPersonCameraOffset = new Vector3(0, 1.5f, 0);
-    private Vector3 thirdPersonCameraOffset = new Vector3(0, 1f, -2.5f);
-    
-    
-    
-    private bool lastVal = false;
-    [SerializeField]
-    private bool tp = false;
+    private readonly Vector3 _cameraOffset = new Vector3(0, 1.5f, 0);
     
     // Start is called before the first frame update
     void Start()
     {
-        mainCamera = Camera.main;
+        // Initialize Fields
+        _mainCamera = Camera.main;
+
+        _rotY = 0;
         
-        GoFirstPerson();
+        InitializeCamera();
     }
 
     // Update is called once per frame
-    void Update()
-    {
-        if (!IsThirdPerson)
-        {
-            mainCamera.transform.localPosition = transform.position + firstPersonCameraOffset;
-        }
-    }
+    void Update() { }
     
-    public void GoFirstPerson()
+    public void InitializeCamera()
     {
-        foreach (SkinnedMeshRenderer headRenderer in headRenderers)
-        {
-            headRenderer.enabled = false;
-        }
+        _mainCamera.transform.localPosition = _cameraOffset;
         
-        foreach (MeshRenderer headRenderer in moreHeadRenderers)
-        {
-            headRenderer.enabled = false;
-        }
+        // Disable all renderers of the head
+        foreach (SkinnedMeshRenderer headRenderer in headRenderers) headRenderer.enabled = false;
+        foreach (MeshRenderer headRenderer in moreHeadRenderers) headRenderer.enabled = false;
         
+        // Hide the neck
         cylinderRenderer.enabled = true;
         
-        Vector3 cameraPos = transform.position;
-        cameraPos.y += 1.5f;
-        mainCamera.transform.localPosition = cameraPos;
+        // Vector3 cameraPos = transform.position;
+        // cameraPos.y += 1.5f;
+        // _mainCamera.transform.localPosition = cameraPos;
         
     }
-    
-    public void GoThirdPerson()
+
+    public void RotateCamera(float y, float ySens)
     {
-        foreach (SkinnedMeshRenderer headRenderer in headRenderers)
-        {
-            headRenderer.enabled = true;
-        }
-        
-        foreach (MeshRenderer headRenderer in moreHeadRenderers)
-        {
-            headRenderer.enabled = true;
-        }
-        
-        cylinderRenderer.enabled = false;
-        
-        Vector3 cameraPos = transform.position;
-        Vector3 cameraOffset = new Vector3(0, 1f, -2.5f);
-        mainCamera.transform.localPosition = cameraPos + cameraOffset;
-    }
-    
-    public void RotateCamera(float x, float y)
-    {
-        Transform mainCameraTransform = mainCamera.transform;
-        mainCameraTransform.Rotate(Vector3.right, y);
-        
-        Vector3 eulerAngles = mainCameraTransform.eulerAngles;
-        eulerAngles.x = Mathf.Clamp(eulerAngles.x, 0, 180);
-        mainCamera.transform.eulerAngles = eulerAngles;
-        
+        _rotY += y * ySens;
+        _rotY = Mathf.Clamp(_rotY, -90f, 90f); 
+        _mainCamera.transform.localRotation = Quaternion.Euler(_rotY, 0, 0);
     }
 }
