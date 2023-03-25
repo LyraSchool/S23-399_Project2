@@ -6,6 +6,11 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     [SerializeField] private float speed = 5f;
+    [SerializeField] private float jumpSpeed = 5f;
+    
+    [SerializeField] private float gravity = 9.81f;
+    
+    [SerializeField] private float vSpeed;
     
     //private Rigidbody _rb;
     
@@ -72,16 +77,37 @@ public class PlayerController : MonoBehaviour
         
         Vector3 moveDir = new Vector3(x, 0, z).normalized;
         Vector3 movement = transform.TransformDirection(moveDir);
+
+        
+        if (_characterController.isGrounded)
+        {
+            vSpeed = 0;
+            if (Input.GetKeyDown(KeyCode.Space))
+            {
+                vSpeed = jumpSpeed;
+            }
+        }
+        else
+        {
+            vSpeed -= gravity * Time.deltaTime;
+        }
+        
+        movement.y = vSpeed;
+        
+        
         
         //_rb.velocity = moveDir * speed;
         _characterController.Move(speed * Time.deltaTime * movement);
         
         
+        
+        // Camera rotation
+        
         float mouseX = Input.GetAxis("Mouse X");
         float mouseY = Input.GetAxis("Mouse Y");
         
         // First person camera and player rotation
-        transform.Rotate(Vector3.up * mouseX);
+        transform.Rotate(xSensitivity * mouseX * Vector3.up);
         _playerCameraController.RotateCamera(-mouseY, ySensitivity);
         
         if (Input.GetKeyDown(KeyCode.E))

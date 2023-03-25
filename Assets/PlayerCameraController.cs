@@ -4,12 +4,6 @@ using UnityEngine;
 
 public class PlayerCameraController : MonoBehaviour
 {
-    // Renderers
-    [SerializeField] private SkinnedMeshRenderer[] headRenderers;
-    [SerializeField] private MeshRenderer[] moreHeadRenderers;
-    [SerializeField] private MeshRenderer cylinderRenderer;
-    
-    
     private Camera _mainCamera;
 
     private float _rotY;
@@ -34,12 +28,12 @@ public class PlayerCameraController : MonoBehaviour
     {
         _mainCamera.transform.localPosition = _cameraOffset;
         
-        // Disable all renderers of the head
-        foreach (SkinnedMeshRenderer headRenderer in headRenderers) headRenderer.enabled = false;
-        foreach (MeshRenderer headRenderer in moreHeadRenderers) headRenderer.enabled = false;
-        
-        // Hide the neck
-        cylinderRenderer.enabled = true;
+        // // Disable all renderers of the head
+        // foreach (SkinnedMeshRenderer headRenderer in headRenderers) headRenderer.enabled = false;
+        // foreach (MeshRenderer headRenderer in moreHeadRenderers) headRenderer.enabled = false;
+        //
+        // // Hide the neck
+        // cylinderRenderer.enabled = true;
         
         // Vector3 cameraPos = transform.position;
         // cameraPos.y += 1.5f;
