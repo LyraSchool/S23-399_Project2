@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Children:
   - {fileID: 3}
-  - {fileID: 16}
+  - {fileID: 17}
   m_Position:
     serializedVersion: 2
     x: 0
@@ -24,7 +24,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 80
+  controlID: 45
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -34,21 +34,21 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 13953, guid: 0000000000000000e000000000000000, type: 0}
+  m_Script: {fileID: 12141, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_MinSize: {x: 800, y: 250}
+  m_MinSize: {x: 300, y: 360}
   m_MaxSize: {x: 4000, y: 4000}
   m_TitleContent:
-    m_Text: Package Manager
-    m_Image: {fileID: -2824328813065806953, guid: 0000000000000000d000000000000000, type: 0}
+    m_Text: Navigation
+    m_Image: {fileID: 1087843850482249999, guid: 0000000000000000d000000000000000, type: 0}
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 363
+    x: 1466
     y: 121
-    width: 1101
-    height: 503
+    width: 453
+    height: 864
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
@@ -67,7 +67,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Children:
   - {fileID: 4}
-  - {fileID: 12}
+  - {fileID: 13}
   m_Position:
     serializedVersion: 2
     x: 0
@@ -77,7 +77,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 81
+  controlID: 20
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -102,7 +102,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 82
+  controlID: 21
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -122,15 +122,15 @@ MonoBehaviour:
     y: 0
     width: 363
     height: 524
-  m_MinSize: {x: 201, y: 221}
-  m_MaxSize: {x: 4001, y: 4021}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 6}
   m_Panes:
   - {fileID: 6}
   - {fileID: 7}
   - {fileID: 8}
   m_Selected: 0
-  m_LastSelected: 0
+  m_LastSelected: 2
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -161,10 +161,10 @@ MonoBehaviour:
     m_SaveData: []
   m_SceneHierarchy:
     m_TreeViewState:
-      scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
-      m_LastClickedID: 0
-      m_ExpandedIDs: bceefdff0ef0fdffaa0cfefffa2dfeff042efeff086dfeff20dffeff2adffeff34dffeff1ce6feffca37ffff84ebffff62f8ffff12fbffff3aae0000223d0100923d0100ca3d0100523e0100
+      scrollPos: {x: 0, y: 414}
+      m_SelectedIDs: 2cb10000
+      m_LastClickedID: 45356
+      m_ExpandedIDs: 3cf1fffff4f2ffff12fbffff96ae0000f4ae000010af00004eaf0000b6af000058b00000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -180,7 +180,7 @@ MonoBehaviour:
         m_IsRenaming: 0
         m_OriginalEventType: 11
         m_IsRenamingFilename: 0
-        m_ClientGUIView: {fileID: 0}
+        m_ClientGUIView: {fileID: 5}
       m_SearchString: 
     m_ExpandedScenes: []
     m_CurrenRootInstanceID: 0
@@ -222,7 +222,7 @@ MonoBehaviour:
     m_CachedPref: 151
     m_ControlHash: 1412526313
     m_PrefName: Preview_InspectorPreview
-  m_LastInspectedObjectInstanceID: -129376
+  m_LastInspectedObjectInstanceID: 44894
   m_LastVerticalScrollValue: 0
   m_GlobalObjectId: 
   m_InspectorMode: 0
@@ -262,11 +262,11 @@ MonoBehaviour:
   timeSinceLastRotation: -1
   currentBranchAndRemoteHasUpdate: 0
   currentTrackingStatusHasUpdate: 0
-  currentStatusEntriesHasUpdate: 0
+  currentStatusEntriesHasUpdate: 1
   repositoryProgressHasUpdate: 1
   appManagerProgressHasUpdate: 1
-  changeTab: 5
-  activeTab: 5
+  changeTab: 3
+  activeTab: 3
   initProjectView:
     hasCompletedInitialCheck: 1
     isUserDataPresent: 1
@@ -350,19 +350,1330 @@ MonoBehaviour:
     remoteBranches: []
   changesView:
     currentBranchHasUpdate: 0
-    currentStatusEntriesHasUpdate: 0
-    currentLocksHasUpdate: 0
+    currentStatusEntriesHasUpdate: 1
+    currentLocksHasUpdate: 1
     commitBody: 
     commitMessage: 
     currentBranch: main
-    treeScroll: {x: 0, y: 0}
+    treeScroll: {x: 0, y: 180}
     treeChanges:
       assets:
-        keys: []
-        values: []
+        keys:
+        - 00000000000000001000000000000000
+        - 5c6ad3812e945396f9f8ff05e8a2eb52
+        - c1a8366a45e42f3f59b2609e7bbad1e5
+        - 9b991188e61a291e9a713d8ff03ead99
+        - 279b32cc330606612af57debb8861f7d
+        - 6827bd71250d8674dbe5c745739a45ae
+        - 49f24ea91650882488e8a6bb41855fe4
+        - 8a00faad24fb45a5da6d41922a01a17e
+        - 7d72f0c1b65ec984992d3ed4cd3651e6
+        - de6dd2698234c8f419f009c20a2d4749
+        - d567127e67650a841875c0ade549253b
+        - 6ea315d0fd7389c41b19996891e99ae3
+        - 4d10ac4172eca3303b003d118732e812
+        - cc3c94551be6839229c8490c1708ff0b
+        - b67c9e03ef331b098859893eef5817bb
+        - f3eea9b1c7ba62247acf479d69835474
+        - de559bbb071ebfd40ab5af80881e75e8
+        - 812aae90a9297f249908057eed4c0879
+        - e44a892308e84194f9f7a5817a6285d7
+        - 23ee7f6864c52b243bfb4f2da09bc287
+        - 922934026949958468099adf2c5acaa6
+        - fc9a62f9b1354f342bacfbbe077c503e
+        - 77c3de37a980599489d5f7f009c186fd
+        - 37e6af8636979e04086967e3bd667606
+        - 2695de705873c1f44ac4a4341c85c8a4
+        - a0389bcc17a6335409898ddb374c1570
+        - 2ef8e6599b7f9934e8ff0d64c5325a1f
+        - 631762b9a30b33a42836730a6b37d13f
+        - 857241dcf6bb2ea45a0b3f46d78f44b5
+        - d870b4f0cba458640b29cda304d40186
+        - 0d6373858f853604b960cf84b7d3dfbf
+        - 55edd2c9d257d3f4481dfd16015bf8c1
+        - 79969b20b5ba62e499ee433a4dd38701
+        - 59dbfb66512f63c4eb6e1e30e0603198
+        - 165698eac7ca81041ad603fc5a3afa55
+        - 1d31b4476a14a0246b2e0f023e8877fe
+        - 3fa7045af54b82c47852949257d136c7
+        - fe9153d19be184442b12189f86fc4a85
+        - 8f7380da49034cd488ddff94b1ac35d1
+        - 6a28a82791e0b224081a04d42d031ccf
+        - a1b4b8144e2a4054199287da62cdd0da
+        - 37e60e08c75eae44b93d598a3bb10f05
+        - e7ed6772552b9e4488b1398f8282ed3b
+        - 9fdb5531bdf185e448dd06dfa8192f8d
+        - 62092c25312055548a5b415184883759
+        - 6dc4cf4496348884d8ee27743ae38562
+        - d58be77cba3adf54cb14b15052b86514
+        - 06cb2b131fe009c47a523671a8fa9ed8
+        - 51c2b7bc917069942a0ac4a10bcabf01
+        - 5ccd003863ea1cb48bb2f7bceda0a26d
+        - 6291fbf5d0e7c4642ad863eaf8b60622
+        - 4ef3438267568cd40b87841c3e2c22c5
+        - d681134af7b3e50479d8d90effa0e1eb
+        - 33de7c829c3a0224c8975ad93b61b05e
+        - decb53c07686cc94b860f8e04d438d22
+        values:
+        - path: Assets
+          label: Assets
+          level: 0
+          isFolder: 1
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: 
+            fullPath: 
+            projectPath: 
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 0
+        - path: Assets/Animations
+          label: Animations
+          level: 1
+          isFolder: 1
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: 
+            fullPath: 
+            projectPath: 
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 0
+        - path: Assets/Animations/Enemy.controller
+          label: Enemy.controller
+          level: 2
+          isFolder: 0
+          isContainer: 1
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: Assets/Animations/Enemy.controller
+            fullPath: /home/blyra/UnityProjects/S23-399_Project2/Assets/Animations/Enemy.controller
+            projectPath: Assets/Animations/Enemy.controller
+            originalPath: 
+            indexStatus: 1
+            workTreeStatus: 1
+        - path: Assets/Animations/Enemy
+          label: Enemy
+          level: 2
+          isFolder: 1
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: 
+            fullPath: 
+            projectPath: 
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 0
+        - path: Assets/Animations/Enemy/EnemyIdle.anim
+          label: EnemyIdle.anim
+          level: 3
+          isFolder: 0
+          isContainer: 1
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: Assets/Animations/Enemy/EnemyIdle.anim
+            fullPath: /home/blyra/UnityProjects/S23-399_Project2/Assets/Animations/Enemy/EnemyIdle.anim
+            projectPath: Assets/Animations/Enemy/EnemyIdle.anim
+            originalPath: 
+            indexStatus: 1
+            workTreeStatus: 1
+        - path: Assets/Custom
+          label: Custom
+          level: 1
+          isFolder: 1
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: 
+            fullPath: 
+            projectPath: 
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 0
+        - path: Assets/Custom/Models
+          label: Models
+          level: 2
+          isFolder: 1
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: 
+            fullPath: 
+            projectPath: 
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 0
+        - path: Assets/Custom/Models/UnimyCham
+          label: UnimyCham
+          level: 3
+          isFolder: 1
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: 
+            fullPath: 
+            projectPath: 
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 0
+        - path: Assets/Custom/Models/UnimyCham/body.mat
+          label: body.mat
+          level: 4
+          isFolder: 0
+          isContainer: 1
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: Assets/Custom/Models/UnimyCham/body.mat
+            fullPath: /home/blyra/UnityProjects/S23-399_Project2/Assets/Custom/Models/UnimyCham/body.mat
+            projectPath: Assets/Custom/Models/UnimyCham/body.mat
+            originalPath: 
+            indexStatus: 1
+            workTreeStatus: 1
+        - path: Assets/Custom/Models/UnimyCham/skin1.mat
+          label: skin1.mat
+          level: 4
+          isFolder: 0
+          isContainer: 1
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: Assets/Custom/Models/UnimyCham/skin1.mat
+            fullPath: /home/blyra/UnityProjects/S23-399_Project2/Assets/Custom/Models/UnimyCham/skin1.mat
+            projectPath: Assets/Custom/Models/UnimyCham/skin1.mat
+            originalPath: 
+            indexStatus: 1
+            workTreeStatus: 1
+        - path: Assets/Custom/Models/UnimyCham/umibychan.fbx
+          label: umibychan.fbx
+          level: 4
+          isFolder: 0
+          isContainer: 1
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: Assets/Custom/Models/UnimyCham/umibychan.fbx
+            fullPath: /home/blyra/UnityProjects/S23-399_Project2/Assets/Custom/Models/UnimyCham/umibychan.fbx
+            projectPath: Assets/Custom/Models/UnimyCham/umibychan.fbx
+            originalPath: 
+            indexStatus: 1
+            workTreeStatus: 1
+        - path: Assets/Scenes
+          label: Scenes
+          level: 1
+          isFolder: 1
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: 
+            fullPath: 
+            projectPath: 
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 0
+        - path: Assets/Scenes/SampleScene
+          label: SampleScene
+          level: 2
+          isFolder: 1
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: 
+            fullPath: 
+            projectPath: 
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 0
+        - path: Assets/Scenes/SampleScene/NavMesh.asset
+          label: NavMesh.asset
+          level: 3
+          isFolder: 0
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: Assets/Scenes/SampleScene/NavMesh.asset
+            fullPath: /home/blyra/UnityProjects/S23-399_Project2/Assets/Scenes/SampleScene/NavMesh.asset
+            projectPath: Assets/Scenes/SampleScene/NavMesh.asset
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 3
+        - path: Assets/Zombie
+          label: Zombie
+          level: 1
+          isFolder: 1
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: 
+            fullPath: 
+            projectPath: 
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 0
+        - path: Assets/Zombie/Animations
+          label: Animations
+          level: 2
+          isFolder: 1
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: 
+            fullPath: 
+            projectPath: 
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 0
+        - path: Assets/Zombie/Animations/Z_Attack.anim
+          label: Z_Attack.anim
+          level: 3
+          isFolder: 0
+          isContainer: 1
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: Assets/Zombie/Animations/Z_Attack.anim
+            fullPath: /home/blyra/UnityProjects/S23-399_Project2/Assets/Zombie/Animations/Z_Attack.anim
+            projectPath: Assets/Zombie/Animations/Z_Attack.anim
+            originalPath: 
+            indexStatus: 1
+            workTreeStatus: 1
+        - path: Assets/Zombie/Animations/Z_FallingBack.anim
+          label: Z_FallingBack.anim
+          level: 3
+          isFolder: 0
+          isContainer: 1
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: Assets/Zombie/Animations/Z_FallingBack.anim
+            fullPath: /home/blyra/UnityProjects/S23-399_Project2/Assets/Zombie/Animations/Z_FallingBack.anim
+            projectPath: Assets/Zombie/Animations/Z_FallingBack.anim
+            originalPath: 
+            indexStatus: 1
+            workTreeStatus: 1
+        - path: Assets/Zombie/Animations/Z_FallingForward.anim
+          label: Z_FallingForward.anim
+          level: 3
+          isFolder: 0
+          isContainer: 1
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: Assets/Zombie/Animations/Z_FallingForward.anim
+            fullPath: /home/blyra/UnityProjects/S23-399_Project2/Assets/Zombie/Animations/Z_FallingForward.anim
+            projectPath: Assets/Zombie/Animations/Z_FallingForward.anim
+            originalPath: 
+            indexStatus: 1
+            workTreeStatus: 1
+        - path: Assets/Zombie/Animations/Z_Idle.anim
+          label: Z_Idle.anim
+          level: 3
+          isFolder: 0
+          isContainer: 1
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: Assets/Zombie/Animations/Z_Idle.anim
+            fullPath: /home/blyra/UnityProjects/S23-399_Project2/Assets/Zombie/Animations/Z_Idle.anim
+            projectPath: Assets/Zombie/Animations/Z_Idle.anim
+            originalPath: 
+            indexStatus: 1
+            workTreeStatus: 1
+        - path: Assets/Zombie/Animations/Z_Run.anim
+          label: Z_Run.anim
+          level: 3
+          isFolder: 0
+          isContainer: 1
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: Assets/Zombie/Animations/Z_Run.anim
+            fullPath: /home/blyra/UnityProjects/S23-399_Project2/Assets/Zombie/Animations/Z_Run.anim
+            projectPath: Assets/Zombie/Animations/Z_Run.anim
+            originalPath: 
+            indexStatus: 1
+            workTreeStatus: 1
+        - path: Assets/Zombie/Animations/Z_Run_InPlace.anim
+          label: Z_Run_InPlace.anim
+          level: 3
+          isFolder: 0
+          isContainer: 1
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: Assets/Zombie/Animations/Z_Run_InPlace.anim
+            fullPath: /home/blyra/UnityProjects/S23-399_Project2/Assets/Zombie/Animations/Z_Run_InPlace.anim
+            projectPath: Assets/Zombie/Animations/Z_Run_InPlace.anim
+            originalPath: 
+            indexStatus: 1
+            workTreeStatus: 1
+        - path: Assets/Zombie/Animations/Z_Walk.anim
+          label: Z_Walk.anim
+          level: 3
+          isFolder: 0
+          isContainer: 1
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: Assets/Zombie/Animations/Z_Walk.anim
+            fullPath: /home/blyra/UnityProjects/S23-399_Project2/Assets/Zombie/Animations/Z_Walk.anim
+            projectPath: Assets/Zombie/Animations/Z_Walk.anim
+            originalPath: 
+            indexStatus: 1
+            workTreeStatus: 1
+        - path: Assets/Zombie/Animations/Z_Walk_InPlace.anim
+          label: Z_Walk_InPlace.anim
+          level: 3
+          isFolder: 0
+          isContainer: 1
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: Assets/Zombie/Animations/Z_Walk_InPlace.anim
+            fullPath: /home/blyra/UnityProjects/S23-399_Project2/Assets/Zombie/Animations/Z_Walk_InPlace.anim
+            projectPath: Assets/Zombie/Animations/Z_Walk_InPlace.anim
+            originalPath: 
+            indexStatus: 1
+            workTreeStatus: 1
+        - path: Assets/Zombie/Animations/Z_Walk1.anim
+          label: Z_Walk1.anim
+          level: 3
+          isFolder: 0
+          isContainer: 1
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: Assets/Zombie/Animations/Z_Walk1.anim
+            fullPath: /home/blyra/UnityProjects/S23-399_Project2/Assets/Zombie/Animations/Z_Walk1.anim
+            projectPath: Assets/Zombie/Animations/Z_Walk1.anim
+            originalPath: 
+            indexStatus: 1
+            workTreeStatus: 1
+        - path: Assets/Zombie/Animations/Z_Walk1_InPlace.anim
+          label: Z_Walk1_InPlace.anim
+          level: 3
+          isFolder: 0
+          isContainer: 1
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: Assets/Zombie/Animations/Z_Walk1_InPlace.anim
+            fullPath: /home/blyra/UnityProjects/S23-399_Project2/Assets/Zombie/Animations/Z_Walk1_InPlace.anim
+            projectPath: Assets/Zombie/Animations/Z_Walk1_InPlace.anim
+            originalPath: 
+            indexStatus: 1
+            workTreeStatus: 1
+        - path: Assets/Zombie/Animations/Zombie.controller
+          label: Zombie.controller
+          level: 3
+          isFolder: 0
+          isContainer: 1
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: Assets/Zombie/Animations/Zombie.controller
+            fullPath: /home/blyra/UnityProjects/S23-399_Project2/Assets/Zombie/Animations/Zombie.controller
+            projectPath: Assets/Zombie/Animations/Zombie.controller
+            originalPath: 
+            indexStatus: 1
+            workTreeStatus: 1
+        - path: Assets/Zombie/Animations/Zombie@Z_Attack.FBX
+          label: Zombie@Z_Attack.FBX
+          level: 3
+          isFolder: 0
+          isContainer: 1
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: Assets/Zombie/Animations/Zombie@Z_Attack.FBX
+            fullPath: /home/blyra/UnityProjects/S23-399_Project2/Assets/Zombie/Animations/Zombie@Z_Attack.FBX
+            projectPath: Assets/Zombie/Animations/Zombie@Z_Attack.FBX
+            originalPath: 
+            indexStatus: 1
+            workTreeStatus: 1
+        - path: Assets/Zombie/Animations/Zombie@Z_FallingBack.FBX
+          label: Zombie@Z_FallingBack.FBX
+          level: 3
+          isFolder: 0
+          isContainer: 1
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: Assets/Zombie/Animations/Zombie@Z_FallingBack.FBX
+            fullPath: /home/blyra/UnityProjects/S23-399_Project2/Assets/Zombie/Animations/Zombie@Z_FallingBack.FBX
+            projectPath: Assets/Zombie/Animations/Zombie@Z_FallingBack.FBX
+            originalPath: 
+            indexStatus: 1
+            workTreeStatus: 1
+        - path: Assets/Zombie/Animations/Zombie@Z_FallingForward.FBX
+          label: Zombie@Z_FallingForward.FBX
+          level: 3
+          isFolder: 0
+          isContainer: 1
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: Assets/Zombie/Animations/Zombie@Z_FallingForward.FBX
+            fullPath: /home/blyra/UnityProjects/S23-399_Project2/Assets/Zombie/Animations/Zombie@Z_FallingForward.FBX
+            projectPath: Assets/Zombie/Animations/Zombie@Z_FallingForward.FBX
+            originalPath: 
+            indexStatus: 1
+            workTreeStatus: 1
+        - path: Assets/Zombie/Animations/Zombie@Z_Idle.FBX
+          label: Zombie@Z_Idle.FBX
+          level: 3
+          isFolder: 0
+          isContainer: 1
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: Assets/Zombie/Animations/Zombie@Z_Idle.FBX
+            fullPath: /home/blyra/UnityProjects/S23-399_Project2/Assets/Zombie/Animations/Zombie@Z_Idle.FBX
+            projectPath: Assets/Zombie/Animations/Zombie@Z_Idle.FBX
+            originalPath: 
+            indexStatus: 1
+            workTreeStatus: 1
+        - path: Assets/Zombie/Animations/Zombie@Z_Run.FBX
+          label: Zombie@Z_Run.FBX
+          level: 3
+          isFolder: 0
+          isContainer: 1
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: Assets/Zombie/Animations/Zombie@Z_Run.FBX
+            fullPath: /home/blyra/UnityProjects/S23-399_Project2/Assets/Zombie/Animations/Zombie@Z_Run.FBX
+            projectPath: Assets/Zombie/Animations/Zombie@Z_Run.FBX
+            originalPath: 
+            indexStatus: 1
+            workTreeStatus: 1
+        - path: Assets/Zombie/Animations/Zombie@Z_Run_InPlace.FBX
+          label: Zombie@Z_Run_InPlace.FBX
+          level: 3
+          isFolder: 0
+          isContainer: 1
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: Assets/Zombie/Animations/Zombie@Z_Run_InPlace.FBX
+            fullPath: /home/blyra/UnityProjects/S23-399_Project2/Assets/Zombie/Animations/Zombie@Z_Run_InPlace.FBX
+            projectPath: Assets/Zombie/Animations/Zombie@Z_Run_InPlace.FBX
+            originalPath: 
+            indexStatus: 1
+            workTreeStatus: 1
+        - path: Assets/Zombie/Animations/Zombie@Z_Walk.FBX
+          label: Zombie@Z_Walk.FBX
+          level: 3
+          isFolder: 0
+          isContainer: 1
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: Assets/Zombie/Animations/Zombie@Z_Walk.FBX
+            fullPath: /home/blyra/UnityProjects/S23-399_Project2/Assets/Zombie/Animations/Zombie@Z_Walk.FBX
+            projectPath: Assets/Zombie/Animations/Zombie@Z_Walk.FBX
+            originalPath: 
+            indexStatus: 1
+            workTreeStatus: 1
+        - path: Assets/Zombie/Animations/Zombie@Z_Walk_InPlace.FBX
+          label: Zombie@Z_Walk_InPlace.FBX
+          level: 3
+          isFolder: 0
+          isContainer: 1
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: Assets/Zombie/Animations/Zombie@Z_Walk_InPlace.FBX
+            fullPath: /home/blyra/UnityProjects/S23-399_Project2/Assets/Zombie/Animations/Zombie@Z_Walk_InPlace.FBX
+            projectPath: Assets/Zombie/Animations/Zombie@Z_Walk_InPlace.FBX
+            originalPath: 
+            indexStatus: 1
+            workTreeStatus: 1
+        - path: Assets/Zombie/Animations/Zombie@Z_Walk1.FBX
+          label: Zombie@Z_Walk1.FBX
+          level: 3
+          isFolder: 0
+          isContainer: 1
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: Assets/Zombie/Animations/Zombie@Z_Walk1.FBX
+            fullPath: /home/blyra/UnityProjects/S23-399_Project2/Assets/Zombie/Animations/Zombie@Z_Walk1.FBX
+            projectPath: Assets/Zombie/Animations/Zombie@Z_Walk1.FBX
+            originalPath: 
+            indexStatus: 1
+            workTreeStatus: 1
+        - path: Assets/Zombie/Animations/Zombie@Z_Walk1_InPlace.FBX
+          label: Zombie@Z_Walk1_InPlace.FBX
+          level: 3
+          isFolder: 0
+          isContainer: 1
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: Assets/Zombie/Animations/Zombie@Z_Walk1_InPlace.FBX
+            fullPath: /home/blyra/UnityProjects/S23-399_Project2/Assets/Zombie/Animations/Zombie@Z_Walk1_InPlace.FBX
+            projectPath: Assets/Zombie/Animations/Zombie@Z_Walk1_InPlace.FBX
+            originalPath: 
+            indexStatus: 1
+            workTreeStatus: 1
+        - path: Assets/Zombie/FBXs
+          label: FBXs
+          level: 2
+          isFolder: 1
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: 
+            fullPath: 
+            projectPath: 
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 0
+        - path: Assets/Zombie/FBXs/Zombie1.FBX
+          label: Zombie1.FBX
+          level: 3
+          isFolder: 0
+          isContainer: 1
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: Assets/Zombie/FBXs/Zombie1.FBX
+            fullPath: /home/blyra/UnityProjects/S23-399_Project2/Assets/Zombie/FBXs/Zombie1.FBX
+            projectPath: Assets/Zombie/FBXs/Zombie1.FBX
+            originalPath: 
+            indexStatus: 1
+            workTreeStatus: 1
+        - path: Assets/Zombie/FBXs/Zombie2.FBX
+          label: Zombie2.FBX
+          level: 3
+          isFolder: 0
+          isContainer: 1
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: Assets/Zombie/FBXs/Zombie2.FBX
+            fullPath: /home/blyra/UnityProjects/S23-399_Project2/Assets/Zombie/FBXs/Zombie2.FBX
+            projectPath: Assets/Zombie/FBXs/Zombie2.FBX
+            originalPath: 
+            indexStatus: 1
+            workTreeStatus: 1
+        - path: Assets/Zombie/FBXs/Zombie3.FBX
+          label: Zombie3.FBX
+          level: 3
+          isFolder: 0
+          isContainer: 1
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: Assets/Zombie/FBXs/Zombie3.FBX
+            fullPath: /home/blyra/UnityProjects/S23-399_Project2/Assets/Zombie/FBXs/Zombie3.FBX
+            projectPath: Assets/Zombie/FBXs/Zombie3.FBX
+            originalPath: 
+            indexStatus: 1
+            workTreeStatus: 1
+        - path: Assets/Zombie/Materials
+          label: Materials
+          level: 2
+          isFolder: 1
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: 
+            fullPath: 
+            projectPath: 
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 0
+        - path: Assets/Zombie/Materials/Plane.mat
+          label: Plane.mat
+          level: 3
+          isFolder: 0
+          isContainer: 1
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: Assets/Zombie/Materials/Plane.mat
+            fullPath: /home/blyra/UnityProjects/S23-399_Project2/Assets/Zombie/Materials/Plane.mat
+            projectPath: Assets/Zombie/Materials/Plane.mat
+            originalPath: 
+            indexStatus: 1
+            workTreeStatus: 1
+        - path: Assets/Zombie/Materials/Zombie.mat
+          label: Zombie.mat
+          level: 3
+          isFolder: 0
+          isContainer: 1
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: Assets/Zombie/Materials/Zombie.mat
+            fullPath: /home/blyra/UnityProjects/S23-399_Project2/Assets/Zombie/Materials/Zombie.mat
+            projectPath: Assets/Zombie/Materials/Zombie.mat
+            originalPath: 
+            indexStatus: 1
+            workTreeStatus: 1
+        - path: Assets/Zombie/Prefabs
+          label: Prefabs
+          level: 2
+          isFolder: 1
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: 
+            fullPath: 
+            projectPath: 
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 0
+        - path: Assets/Zombie/Prefabs/Zombie1.prefab
+          label: Zombie1.prefab
+          level: 3
+          isFolder: 0
+          isContainer: 1
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: Assets/Zombie/Prefabs/Zombie1.prefab
+            fullPath: /home/blyra/UnityProjects/S23-399_Project2/Assets/Zombie/Prefabs/Zombie1.prefab
+            projectPath: Assets/Zombie/Prefabs/Zombie1.prefab
+            originalPath: 
+            indexStatus: 1
+            workTreeStatus: 1
+        - path: Assets/Zombie/Prefabs/Zombie2.prefab
+          label: Zombie2.prefab
+          level: 3
+          isFolder: 0
+          isContainer: 1
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: Assets/Zombie/Prefabs/Zombie2.prefab
+            fullPath: /home/blyra/UnityProjects/S23-399_Project2/Assets/Zombie/Prefabs/Zombie2.prefab
+            projectPath: Assets/Zombie/Prefabs/Zombie2.prefab
+            originalPath: 
+            indexStatus: 1
+            workTreeStatus: 1
+        - path: Assets/Zombie/Prefabs/Zombie3.prefab
+          label: Zombie3.prefab
+          level: 3
+          isFolder: 0
+          isContainer: 1
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: Assets/Zombie/Prefabs/Zombie3.prefab
+            fullPath: /home/blyra/UnityProjects/S23-399_Project2/Assets/Zombie/Prefabs/Zombie3.prefab
+            projectPath: Assets/Zombie/Prefabs/Zombie3.prefab
+            originalPath: 
+            indexStatus: 1
+            workTreeStatus: 1
+        - path: Assets/Zombie/ScenePrefabs.unity
+          label: ScenePrefabs.unity
+          level: 2
+          isFolder: 0
+          isContainer: 1
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: Assets/Zombie/ScenePrefabs.unity
+            fullPath: /home/blyra/UnityProjects/S23-399_Project2/Assets/Zombie/ScenePrefabs.unity
+            projectPath: Assets/Zombie/ScenePrefabs.unity
+            originalPath: 
+            indexStatus: 1
+            workTreeStatus: 1
+        - path: Assets/Zombie/Textures
+          label: Textures
+          level: 2
+          isFolder: 1
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: 
+            fullPath: 
+            projectPath: 
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 0
+        - path: Assets/Zombie/Textures/Zombie.tga
+          label: Zombie.tga
+          level: 3
+          isFolder: 0
+          isContainer: 1
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: Assets/Zombie/Textures/Zombie.tga
+            fullPath: /home/blyra/UnityProjects/S23-399_Project2/Assets/Zombie/Textures/Zombie.tga
+            projectPath: Assets/Zombie/Textures/Zombie.tga
+            originalPath: 
+            indexStatus: 1
+            workTreeStatus: 1
+        - path: Assets/Zombie/Textures/Zombie_ao.png
+          label: Zombie_ao.png
+          level: 3
+          isFolder: 0
+          isContainer: 1
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: Assets/Zombie/Textures/Zombie_ao.png
+            fullPath: /home/blyra/UnityProjects/S23-399_Project2/Assets/Zombie/Textures/Zombie_ao.png
+            projectPath: Assets/Zombie/Textures/Zombie_ao.png
+            originalPath: 
+            indexStatus: 1
+            workTreeStatus: 1
+        - path: Assets/Zombie/Textures/zombie_emission.tga
+          label: zombie_emission.tga
+          level: 3
+          isFolder: 0
+          isContainer: 1
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: Assets/Zombie/Textures/zombie_emission.tga
+            fullPath: /home/blyra/UnityProjects/S23-399_Project2/Assets/Zombie/Textures/zombie_emission.tga
+            projectPath: Assets/Zombie/Textures/zombie_emission.tga
+            originalPath: 
+            indexStatus: 1
+            workTreeStatus: 1
+        - path: Assets/Zombie/Textures/Zombie_metallic.tga
+          label: Zombie_metallic.tga
+          level: 3
+          isFolder: 0
+          isContainer: 1
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: Assets/Zombie/Textures/Zombie_metallic.tga
+            fullPath: /home/blyra/UnityProjects/S23-399_Project2/Assets/Zombie/Textures/Zombie_metallic.tga
+            projectPath: Assets/Zombie/Textures/Zombie_metallic.tga
+            originalPath: 
+            indexStatus: 1
+            workTreeStatus: 1
+        - path: Assets/Zombie/Textures/Zombie_nm.png
+          label: Zombie_nm.png
+          level: 3
+          isFolder: 0
+          isContainer: 1
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: Assets/Zombie/Textures/Zombie_nm.png
+            fullPath: /home/blyra/UnityProjects/S23-399_Project2/Assets/Zombie/Textures/Zombie_nm.png
+            projectPath: Assets/Zombie/Textures/Zombie_nm.png
+            originalPath: 
+            indexStatus: 1
+            workTreeStatus: 1
       folders:
-        keys: []
-        values: []
+        keys:
+        - Assets
+        - Assets/Animations
+        - Assets/Animations/Enemy
+        - Assets/Custom
+        - Assets/Custom/Models
+        - Assets/Custom/Models/UnimyCham
+        - Assets/Scenes
+        - Assets/Scenes/SampleScene
+        - Assets/Zombie
+        - Assets/Zombie/Animations
+        - Assets/Zombie/FBXs
+        - Assets/Zombie/Materials
+        - Assets/Zombie/Prefabs
+        - Assets/Zombie/Textures
+        values:
+        - path: Assets
+          label: Assets
+          level: 0
+          isFolder: 1
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: 
+            fullPath: 
+            projectPath: 
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 0
+        - path: Assets/Animations
+          label: Animations
+          level: 1
+          isFolder: 1
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: 
+            fullPath: 
+            projectPath: 
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 0
+        - path: Assets/Animations/Enemy
+          label: Enemy
+          level: 2
+          isFolder: 1
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: 
+            fullPath: 
+            projectPath: 
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 0
+        - path: Assets/Custom
+          label: Custom
+          level: 1
+          isFolder: 1
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: 
+            fullPath: 
+            projectPath: 
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 0
+        - path: Assets/Custom/Models
+          label: Models
+          level: 2
+          isFolder: 1
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: 
+            fullPath: 
+            projectPath: 
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 0
+        - path: Assets/Custom/Models/UnimyCham
+          label: UnimyCham
+          level: 3
+          isFolder: 1
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: 
+            fullPath: 
+            projectPath: 
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 0
+        - path: Assets/Scenes
+          label: Scenes
+          level: 1
+          isFolder: 1
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: 
+            fullPath: 
+            projectPath: 
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 0
+        - path: Assets/Scenes/SampleScene
+          label: SampleScene
+          level: 2
+          isFolder: 1
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: 
+            fullPath: 
+            projectPath: 
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 0
+        - path: Assets/Zombie
+          label: Zombie
+          level: 1
+          isFolder: 1
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: 
+            fullPath: 
+            projectPath: 
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 0
+        - path: Assets/Zombie/Animations
+          label: Animations
+          level: 2
+          isFolder: 1
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: 
+            fullPath: 
+            projectPath: 
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 0
+        - path: Assets/Zombie/FBXs
+          label: FBXs
+          level: 2
+          isFolder: 1
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: 
+            fullPath: 
+            projectPath: 
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 0
+        - path: Assets/Zombie/Materials
+          label: Materials
+          level: 2
+          isFolder: 1
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: 
+            fullPath: 
+            projectPath: 
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 0
+        - path: Assets/Zombie/Prefabs
+          label: Prefabs
+          level: 2
+          isFolder: 1
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: 
+            fullPath: 
+            projectPath: 
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 0
+        - path: Assets/Zombie/Textures
+          label: Textures
+          level: 2
+          isFolder: 1
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: 
+            fullPath: 
+            projectPath: 
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 0
       checkedFileNodes:
         keys: []
         values: []
@@ -391,6 +1702,1968 @@ MonoBehaviour:
           originalPath: 
           indexStatus: 0
           workTreeStatus: 0
+      - path: Assets
+        label: Assets
+        level: 0
+        isFolder: 1
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: 
+          fullPath: 
+          projectPath: 
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 0
+      - path: Assets/Animations.meta
+        label: Animations.meta
+        level: 1
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets/Animations.meta
+          fullPath: /home/blyra/UnityProjects/S23-399_Project2/Assets/Animations.meta
+          projectPath: Assets/Animations.meta
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Assets/Animations
+        label: Animations
+        level: 1
+        isFolder: 1
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: 
+          fullPath: 
+          projectPath: 
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 0
+      - path: Assets/Animations/Enemy.meta
+        label: Enemy.meta
+        level: 2
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets/Animations/Enemy.meta
+          fullPath: /home/blyra/UnityProjects/S23-399_Project2/Assets/Animations/Enemy.meta
+          projectPath: Assets/Animations/Enemy.meta
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Assets/Animations/Enemy.controller
+        label: Enemy.controller
+        level: 2
+        isFolder: 0
+        isContainer: 1
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets/Animations/Enemy.controller
+          fullPath: /home/blyra/UnityProjects/S23-399_Project2/Assets/Animations/Enemy.controller
+          projectPath: Assets/Animations/Enemy.controller
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Assets/Animations/Enemy.controller.meta
+        label: Enemy.controller.meta
+        level: 3
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets/Animations/Enemy.controller.meta
+          fullPath: /home/blyra/UnityProjects/S23-399_Project2/Assets/Animations/Enemy.controller.meta
+          projectPath: Assets/Animations/Enemy.controller.meta
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Assets/Animations/Enemy
+        label: Enemy
+        level: 2
+        isFolder: 1
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: 
+          fullPath: 
+          projectPath: 
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 0
+      - path: Assets/Animations/Enemy/EnemyIdle.anim
+        label: EnemyIdle.anim
+        level: 3
+        isFolder: 0
+        isContainer: 1
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets/Animations/Enemy/EnemyIdle.anim
+          fullPath: /home/blyra/UnityProjects/S23-399_Project2/Assets/Animations/Enemy/EnemyIdle.anim
+          projectPath: Assets/Animations/Enemy/EnemyIdle.anim
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Assets/Animations/Enemy/EnemyIdle.anim.meta
+        label: EnemyIdle.anim.meta
+        level: 4
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets/Animations/Enemy/EnemyIdle.anim.meta
+          fullPath: /home/blyra/UnityProjects/S23-399_Project2/Assets/Animations/Enemy/EnemyIdle.anim.meta
+          projectPath: Assets/Animations/Enemy/EnemyIdle.anim.meta
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Assets/Custom
+        label: Custom
+        level: 1
+        isFolder: 1
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: 
+          fullPath: 
+          projectPath: 
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 0
+      - path: Assets/Custom/Models
+        label: Models
+        level: 2
+        isFolder: 1
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: 
+          fullPath: 
+          projectPath: 
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 0
+      - path: Assets/Custom/Models/body.mat
+        label: body.mat
+        level: 3
+        isFolder: 0
+        isContainer: 1
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets/Custom/Models/body.mat
+          fullPath: /home/blyra/UnityProjects/S23-399_Project2/Assets/Custom/Models/body.mat
+          projectPath: Assets/Custom/Models/body.mat
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 5
+      - path: Assets/Custom/Models/body.mat.meta
+        label: body.mat.meta
+        level: 4
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets/Custom/Models/body.mat.meta
+          fullPath: /home/blyra/UnityProjects/S23-399_Project2/Assets/Custom/Models/body.mat.meta
+          projectPath: Assets/Custom/Models/body.mat.meta
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 5
+      - path: Assets/Custom/Models/skin1.mat
+        label: skin1.mat
+        level: 3
+        isFolder: 0
+        isContainer: 1
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets/Custom/Models/skin1.mat
+          fullPath: /home/blyra/UnityProjects/S23-399_Project2/Assets/Custom/Models/skin1.mat
+          projectPath: Assets/Custom/Models/skin1.mat
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 5
+      - path: Assets/Custom/Models/skin1.mat.meta
+        label: skin1.mat.meta
+        level: 4
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets/Custom/Models/skin1.mat.meta
+          fullPath: /home/blyra/UnityProjects/S23-399_Project2/Assets/Custom/Models/skin1.mat.meta
+          projectPath: Assets/Custom/Models/skin1.mat.meta
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 5
+      - path: Assets/Custom/Models/umibychan.fbx
+        label: umibychan.fbx
+        level: 3
+        isFolder: 0
+        isContainer: 1
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets/Custom/Models/umibychan.fbx
+          fullPath: /home/blyra/UnityProjects/S23-399_Project2/Assets/Custom/Models/umibychan.fbx
+          projectPath: Assets/Custom/Models/umibychan.fbx
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 5
+      - path: Assets/Custom/Models/umibychan.fbx.meta
+        label: umibychan.fbx.meta
+        level: 4
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets/Custom/Models/umibychan.fbx.meta
+          fullPath: /home/blyra/UnityProjects/S23-399_Project2/Assets/Custom/Models/umibychan.fbx.meta
+          projectPath: Assets/Custom/Models/umibychan.fbx.meta
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 5
+      - path: Assets/Custom/Models/UnimyCham.meta
+        label: UnimyCham.meta
+        level: 3
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets/Custom/Models/UnimyCham.meta
+          fullPath: /home/blyra/UnityProjects/S23-399_Project2/Assets/Custom/Models/UnimyCham.meta
+          projectPath: Assets/Custom/Models/UnimyCham.meta
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Assets/Custom/Models/UnimyCham
+        label: UnimyCham
+        level: 3
+        isFolder: 1
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: 
+          fullPath: 
+          projectPath: 
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 0
+      - path: Assets/Custom/Models/UnimyCham/body.mat
+        label: body.mat
+        level: 4
+        isFolder: 0
+        isContainer: 1
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets/Custom/Models/UnimyCham/body.mat
+          fullPath: /home/blyra/UnityProjects/S23-399_Project2/Assets/Custom/Models/UnimyCham/body.mat
+          projectPath: Assets/Custom/Models/UnimyCham/body.mat
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Assets/Custom/Models/UnimyCham/body.mat.meta
+        label: body.mat.meta
+        level: 5
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets/Custom/Models/UnimyCham/body.mat.meta
+          fullPath: /home/blyra/UnityProjects/S23-399_Project2/Assets/Custom/Models/UnimyCham/body.mat.meta
+          projectPath: Assets/Custom/Models/UnimyCham/body.mat.meta
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Assets/Custom/Models/UnimyCham/Motions.meta
+        label: Motions.meta
+        level: 4
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets/Custom/Models/UnimyCham/Motions.meta
+          fullPath: /home/blyra/UnityProjects/S23-399_Project2/Assets/Custom/Models/UnimyCham/Motions.meta
+          projectPath: Assets/Custom/Models/UnimyCham/Motions.meta
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Assets/Custom/Models/UnimyCham/skin1.mat
+        label: skin1.mat
+        level: 4
+        isFolder: 0
+        isContainer: 1
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets/Custom/Models/UnimyCham/skin1.mat
+          fullPath: /home/blyra/UnityProjects/S23-399_Project2/Assets/Custom/Models/UnimyCham/skin1.mat
+          projectPath: Assets/Custom/Models/UnimyCham/skin1.mat
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Assets/Custom/Models/UnimyCham/skin1.mat.meta
+        label: skin1.mat.meta
+        level: 5
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets/Custom/Models/UnimyCham/skin1.mat.meta
+          fullPath: /home/blyra/UnityProjects/S23-399_Project2/Assets/Custom/Models/UnimyCham/skin1.mat.meta
+          projectPath: Assets/Custom/Models/UnimyCham/skin1.mat.meta
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Assets/Custom/Models/UnimyCham/umibychan.fbx
+        label: umibychan.fbx
+        level: 4
+        isFolder: 0
+        isContainer: 1
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets/Custom/Models/UnimyCham/umibychan.fbx
+          fullPath: /home/blyra/UnityProjects/S23-399_Project2/Assets/Custom/Models/UnimyCham/umibychan.fbx
+          projectPath: Assets/Custom/Models/UnimyCham/umibychan.fbx
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Assets/Custom/Models/UnimyCham/umibychan.fbx.meta
+        label: umibychan.fbx.meta
+        level: 5
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets/Custom/Models/UnimyCham/umibychan.fbx.meta
+          fullPath: /home/blyra/UnityProjects/S23-399_Project2/Assets/Custom/Models/UnimyCham/umibychan.fbx.meta
+          projectPath: Assets/Custom/Models/UnimyCham/umibychan.fbx.meta
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Assets/Scenes
+        label: Scenes
+        level: 1
+        isFolder: 1
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: 
+          fullPath: 
+          projectPath: 
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 0
+      - path: Assets/Scenes/SampleScene
+        label: SampleScene
+        level: 2
+        isFolder: 1
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: 
+          fullPath: 
+          projectPath: 
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 0
+      - path: Assets/Scenes/SampleScene/NavMesh.asset
+        label: NavMesh.asset
+        level: 3
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets/Scenes/SampleScene/NavMesh.asset
+          fullPath: /home/blyra/UnityProjects/S23-399_Project2/Assets/Scenes/SampleScene/NavMesh.asset
+          projectPath: Assets/Scenes/SampleScene/NavMesh.asset
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 3
+      - path: Assets/Zombie
+        label: Zombie
+        level: 1
+        isFolder: 1
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: 
+          fullPath: 
+          projectPath: 
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 0
+      - path: Assets/Zombie/Animations.meta
+        label: Animations.meta
+        level: 2
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets/Zombie/Animations.meta
+          fullPath: /home/blyra/UnityProjects/S23-399_Project2/Assets/Zombie/Animations.meta
+          projectPath: Assets/Zombie/Animations.meta
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Assets/Zombie/Animations
+        label: Animations
+        level: 2
+        isFolder: 1
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: 
+          fullPath: 
+          projectPath: 
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 0
+      - path: Assets/Zombie/Animations/Z_Attack.anim
+        label: Z_Attack.anim
+        level: 3
+        isFolder: 0
+        isContainer: 1
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets/Zombie/Animations/Z_Attack.anim
+          fullPath: /home/blyra/UnityProjects/S23-399_Project2/Assets/Zombie/Animations/Z_Attack.anim
+          projectPath: Assets/Zombie/Animations/Z_Attack.anim
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Assets/Zombie/Animations/Z_Attack.anim.meta
+        label: Z_Attack.anim.meta
+        level: 4
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets/Zombie/Animations/Z_Attack.anim.meta
+          fullPath: /home/blyra/UnityProjects/S23-399_Project2/Assets/Zombie/Animations/Z_Attack.anim.meta
+          projectPath: Assets/Zombie/Animations/Z_Attack.anim.meta
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Assets/Zombie/Animations/Z_FallingBack.anim
+        label: Z_FallingBack.anim
+        level: 3
+        isFolder: 0
+        isContainer: 1
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets/Zombie/Animations/Z_FallingBack.anim
+          fullPath: /home/blyra/UnityProjects/S23-399_Project2/Assets/Zombie/Animations/Z_FallingBack.anim
+          projectPath: Assets/Zombie/Animations/Z_FallingBack.anim
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Assets/Zombie/Animations/Z_FallingBack.anim.meta
+        label: Z_FallingBack.anim.meta
+        level: 4
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets/Zombie/Animations/Z_FallingBack.anim.meta
+          fullPath: /home/blyra/UnityProjects/S23-399_Project2/Assets/Zombie/Animations/Z_FallingBack.anim.meta
+          projectPath: Assets/Zombie/Animations/Z_FallingBack.anim.meta
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Assets/Zombie/Animations/Z_FallingForward.anim
+        label: Z_FallingForward.anim
+        level: 3
+        isFolder: 0
+        isContainer: 1
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets/Zombie/Animations/Z_FallingForward.anim
+          fullPath: /home/blyra/UnityProjects/S23-399_Project2/Assets/Zombie/Animations/Z_FallingForward.anim
+          projectPath: Assets/Zombie/Animations/Z_FallingForward.anim
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Assets/Zombie/Animations/Z_FallingForward.anim.meta
+        label: Z_FallingForward.anim.meta
+        level: 4
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets/Zombie/Animations/Z_FallingForward.anim.meta
+          fullPath: /home/blyra/UnityProjects/S23-399_Project2/Assets/Zombie/Animations/Z_FallingForward.anim.meta
+          projectPath: Assets/Zombie/Animations/Z_FallingForward.anim.meta
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Assets/Zombie/Animations/Z_Idle.anim
+        label: Z_Idle.anim
+        level: 3
+        isFolder: 0
+        isContainer: 1
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets/Zombie/Animations/Z_Idle.anim
+          fullPath: /home/blyra/UnityProjects/S23-399_Project2/Assets/Zombie/Animations/Z_Idle.anim
+          projectPath: Assets/Zombie/Animations/Z_Idle.anim
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Assets/Zombie/Animations/Z_Idle.anim.meta
+        label: Z_Idle.anim.meta
+        level: 4
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets/Zombie/Animations/Z_Idle.anim.meta
+          fullPath: /home/blyra/UnityProjects/S23-399_Project2/Assets/Zombie/Animations/Z_Idle.anim.meta
+          projectPath: Assets/Zombie/Animations/Z_Idle.anim.meta
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Assets/Zombie/Animations/Z_Run.anim
+        label: Z_Run.anim
+        level: 3
+        isFolder: 0
+        isContainer: 1
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets/Zombie/Animations/Z_Run.anim
+          fullPath: /home/blyra/UnityProjects/S23-399_Project2/Assets/Zombie/Animations/Z_Run.anim
+          projectPath: Assets/Zombie/Animations/Z_Run.anim
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Assets/Zombie/Animations/Z_Run.anim.meta
+        label: Z_Run.anim.meta
+        level: 4
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets/Zombie/Animations/Z_Run.anim.meta
+          fullPath: /home/blyra/UnityProjects/S23-399_Project2/Assets/Zombie/Animations/Z_Run.anim.meta
+          projectPath: Assets/Zombie/Animations/Z_Run.anim.meta
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Assets/Zombie/Animations/Z_Run_InPlace.anim
+        label: Z_Run_InPlace.anim
+        level: 3
+        isFolder: 0
+        isContainer: 1
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets/Zombie/Animations/Z_Run_InPlace.anim
+          fullPath: /home/blyra/UnityProjects/S23-399_Project2/Assets/Zombie/Animations/Z_Run_InPlace.anim
+          projectPath: Assets/Zombie/Animations/Z_Run_InPlace.anim
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Assets/Zombie/Animations/Z_Run_InPlace.anim.meta
+        label: Z_Run_InPlace.anim.meta
+        level: 4
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets/Zombie/Animations/Z_Run_InPlace.anim.meta
+          fullPath: /home/blyra/UnityProjects/S23-399_Project2/Assets/Zombie/Animations/Z_Run_InPlace.anim.meta
+          projectPath: Assets/Zombie/Animations/Z_Run_InPlace.anim.meta
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Assets/Zombie/Animations/Z_Walk.anim
+        label: Z_Walk.anim
+        level: 3
+        isFolder: 0
+        isContainer: 1
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets/Zombie/Animations/Z_Walk.anim
+          fullPath: /home/blyra/UnityProjects/S23-399_Project2/Assets/Zombie/Animations/Z_Walk.anim
+          projectPath: Assets/Zombie/Animations/Z_Walk.anim
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Assets/Zombie/Animations/Z_Walk.anim.meta
+        label: Z_Walk.anim.meta
+        level: 4
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets/Zombie/Animations/Z_Walk.anim.meta
+          fullPath: /home/blyra/UnityProjects/S23-399_Project2/Assets/Zombie/Animations/Z_Walk.anim.meta
+          projectPath: Assets/Zombie/Animations/Z_Walk.anim.meta
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Assets/Zombie/Animations/Z_Walk_InPlace.anim
+        label: Z_Walk_InPlace.anim
+        level: 3
+        isFolder: 0
+        isContainer: 1
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets/Zombie/Animations/Z_Walk_InPlace.anim
+          fullPath: /home/blyra/UnityProjects/S23-399_Project2/Assets/Zombie/Animations/Z_Walk_InPlace.anim
+          projectPath: Assets/Zombie/Animations/Z_Walk_InPlace.anim
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Assets/Zombie/Animations/Z_Walk_InPlace.anim.meta
+        label: Z_Walk_InPlace.anim.meta
+        level: 4
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets/Zombie/Animations/Z_Walk_InPlace.anim.meta
+          fullPath: /home/blyra/UnityProjects/S23-399_Project2/Assets/Zombie/Animations/Z_Walk_InPlace.anim.meta
+          projectPath: Assets/Zombie/Animations/Z_Walk_InPlace.anim.meta
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Assets/Zombie/Animations/Z_Walk1.anim
+        label: Z_Walk1.anim
+        level: 3
+        isFolder: 0
+        isContainer: 1
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets/Zombie/Animations/Z_Walk1.anim
+          fullPath: /home/blyra/UnityProjects/S23-399_Project2/Assets/Zombie/Animations/Z_Walk1.anim
+          projectPath: Assets/Zombie/Animations/Z_Walk1.anim
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Assets/Zombie/Animations/Z_Walk1.anim.meta
+        label: Z_Walk1.anim.meta
+        level: 4
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets/Zombie/Animations/Z_Walk1.anim.meta
+          fullPath: /home/blyra/UnityProjects/S23-399_Project2/Assets/Zombie/Animations/Z_Walk1.anim.meta
+          projectPath: Assets/Zombie/Animations/Z_Walk1.anim.meta
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Assets/Zombie/Animations/Z_Walk1_InPlace.anim
+        label: Z_Walk1_InPlace.anim
+        level: 3
+        isFolder: 0
+        isContainer: 1
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets/Zombie/Animations/Z_Walk1_InPlace.anim
+          fullPath: /home/blyra/UnityProjects/S23-399_Project2/Assets/Zombie/Animations/Z_Walk1_InPlace.anim
+          projectPath: Assets/Zombie/Animations/Z_Walk1_InPlace.anim
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Assets/Zombie/Animations/Z_Walk1_InPlace.anim.meta
+        label: Z_Walk1_InPlace.anim.meta
+        level: 4
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets/Zombie/Animations/Z_Walk1_InPlace.anim.meta
+          fullPath: /home/blyra/UnityProjects/S23-399_Project2/Assets/Zombie/Animations/Z_Walk1_InPlace.anim.meta
+          projectPath: Assets/Zombie/Animations/Z_Walk1_InPlace.anim.meta
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Assets/Zombie/Animations/Zombie.controller
+        label: Zombie.controller
+        level: 3
+        isFolder: 0
+        isContainer: 1
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets/Zombie/Animations/Zombie.controller
+          fullPath: /home/blyra/UnityProjects/S23-399_Project2/Assets/Zombie/Animations/Zombie.controller
+          projectPath: Assets/Zombie/Animations/Zombie.controller
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Assets/Zombie/Animations/Zombie.controller.meta
+        label: Zombie.controller.meta
+        level: 4
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets/Zombie/Animations/Zombie.controller.meta
+          fullPath: /home/blyra/UnityProjects/S23-399_Project2/Assets/Zombie/Animations/Zombie.controller.meta
+          projectPath: Assets/Zombie/Animations/Zombie.controller.meta
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Assets/Zombie/Animations/Zombie@Z_Attack.FBX
+        label: Zombie@Z_Attack.FBX
+        level: 3
+        isFolder: 0
+        isContainer: 1
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets/Zombie/Animations/Zombie@Z_Attack.FBX
+          fullPath: /home/blyra/UnityProjects/S23-399_Project2/Assets/Zombie/Animations/Zombie@Z_Attack.FBX
+          projectPath: Assets/Zombie/Animations/Zombie@Z_Attack.FBX
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Assets/Zombie/Animations/Zombie@Z_Attack.FBX.meta
+        label: Zombie@Z_Attack.FBX.meta
+        level: 4
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets/Zombie/Animations/Zombie@Z_Attack.FBX.meta
+          fullPath: /home/blyra/UnityProjects/S23-399_Project2/Assets/Zombie/Animations/Zombie@Z_Attack.FBX.meta
+          projectPath: Assets/Zombie/Animations/Zombie@Z_Attack.FBX.meta
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Assets/Zombie/Animations/Zombie@Z_FallingBack.FBX
+        label: Zombie@Z_FallingBack.FBX
+        level: 3
+        isFolder: 0
+        isContainer: 1
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets/Zombie/Animations/Zombie@Z_FallingBack.FBX
+          fullPath: /home/blyra/UnityProjects/S23-399_Project2/Assets/Zombie/Animations/Zombie@Z_FallingBack.FBX
+          projectPath: Assets/Zombie/Animations/Zombie@Z_FallingBack.FBX
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Assets/Zombie/Animations/Zombie@Z_FallingBack.FBX.meta
+        label: Zombie@Z_FallingBack.FBX.meta
+        level: 4
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets/Zombie/Animations/Zombie@Z_FallingBack.FBX.meta
+          fullPath: /home/blyra/UnityProjects/S23-399_Project2/Assets/Zombie/Animations/Zombie@Z_FallingBack.FBX.meta
+          projectPath: Assets/Zombie/Animations/Zombie@Z_FallingBack.FBX.meta
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Assets/Zombie/Animations/Zombie@Z_FallingForward.FBX
+        label: Zombie@Z_FallingForward.FBX
+        level: 3
+        isFolder: 0
+        isContainer: 1
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets/Zombie/Animations/Zombie@Z_FallingForward.FBX
+          fullPath: /home/blyra/UnityProjects/S23-399_Project2/Assets/Zombie/Animations/Zombie@Z_FallingForward.FBX
+          projectPath: Assets/Zombie/Animations/Zombie@Z_FallingForward.FBX
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Assets/Zombie/Animations/Zombie@Z_FallingForward.FBX.meta
+        label: Zombie@Z_FallingForward.FBX.meta
+        level: 4
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets/Zombie/Animations/Zombie@Z_FallingForward.FBX.meta
+          fullPath: /home/blyra/UnityProjects/S23-399_Project2/Assets/Zombie/Animations/Zombie@Z_FallingForward.FBX.meta
+          projectPath: Assets/Zombie/Animations/Zombie@Z_FallingForward.FBX.meta
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Assets/Zombie/Animations/Zombie@Z_Idle.FBX
+        label: Zombie@Z_Idle.FBX
+        level: 3
+        isFolder: 0
+        isContainer: 1
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets/Zombie/Animations/Zombie@Z_Idle.FBX
+          fullPath: /home/blyra/UnityProjects/S23-399_Project2/Assets/Zombie/Animations/Zombie@Z_Idle.FBX
+          projectPath: Assets/Zombie/Animations/Zombie@Z_Idle.FBX
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Assets/Zombie/Animations/Zombie@Z_Idle.FBX.meta
+        label: Zombie@Z_Idle.FBX.meta
+        level: 4
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets/Zombie/Animations/Zombie@Z_Idle.FBX.meta
+          fullPath: /home/blyra/UnityProjects/S23-399_Project2/Assets/Zombie/Animations/Zombie@Z_Idle.FBX.meta
+          projectPath: Assets/Zombie/Animations/Zombie@Z_Idle.FBX.meta
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Assets/Zombie/Animations/Zombie@Z_Run.FBX
+        label: Zombie@Z_Run.FBX
+        level: 3
+        isFolder: 0
+        isContainer: 1
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets/Zombie/Animations/Zombie@Z_Run.FBX
+          fullPath: /home/blyra/UnityProjects/S23-399_Project2/Assets/Zombie/Animations/Zombie@Z_Run.FBX
+          projectPath: Assets/Zombie/Animations/Zombie@Z_Run.FBX
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Assets/Zombie/Animations/Zombie@Z_Run.FBX.meta
+        label: Zombie@Z_Run.FBX.meta
+        level: 4
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets/Zombie/Animations/Zombie@Z_Run.FBX.meta
+          fullPath: /home/blyra/UnityProjects/S23-399_Project2/Assets/Zombie/Animations/Zombie@Z_Run.FBX.meta
+          projectPath: Assets/Zombie/Animations/Zombie@Z_Run.FBX.meta
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Assets/Zombie/Animations/Zombie@Z_Run_InPlace.FBX
+        label: Zombie@Z_Run_InPlace.FBX
+        level: 3
+        isFolder: 0
+        isContainer: 1
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets/Zombie/Animations/Zombie@Z_Run_InPlace.FBX
+          fullPath: /home/blyra/UnityProjects/S23-399_Project2/Assets/Zombie/Animations/Zombie@Z_Run_InPlace.FBX
+          projectPath: Assets/Zombie/Animations/Zombie@Z_Run_InPlace.FBX
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Assets/Zombie/Animations/Zombie@Z_Run_InPlace.FBX.meta
+        label: Zombie@Z_Run_InPlace.FBX.meta
+        level: 4
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets/Zombie/Animations/Zombie@Z_Run_InPlace.FBX.meta
+          fullPath: /home/blyra/UnityProjects/S23-399_Project2/Assets/Zombie/Animations/Zombie@Z_Run_InPlace.FBX.meta
+          projectPath: Assets/Zombie/Animations/Zombie@Z_Run_InPlace.FBX.meta
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Assets/Zombie/Animations/Zombie@Z_Walk.FBX
+        label: Zombie@Z_Walk.FBX
+        level: 3
+        isFolder: 0
+        isContainer: 1
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets/Zombie/Animations/Zombie@Z_Walk.FBX
+          fullPath: /home/blyra/UnityProjects/S23-399_Project2/Assets/Zombie/Animations/Zombie@Z_Walk.FBX
+          projectPath: Assets/Zombie/Animations/Zombie@Z_Walk.FBX
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Assets/Zombie/Animations/Zombie@Z_Walk.FBX.meta
+        label: Zombie@Z_Walk.FBX.meta
+        level: 4
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets/Zombie/Animations/Zombie@Z_Walk.FBX.meta
+          fullPath: /home/blyra/UnityProjects/S23-399_Project2/Assets/Zombie/Animations/Zombie@Z_Walk.FBX.meta
+          projectPath: Assets/Zombie/Animations/Zombie@Z_Walk.FBX.meta
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Assets/Zombie/Animations/Zombie@Z_Walk_InPlace.FBX
+        label: Zombie@Z_Walk_InPlace.FBX
+        level: 3
+        isFolder: 0
+        isContainer: 1
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets/Zombie/Animations/Zombie@Z_Walk_InPlace.FBX
+          fullPath: /home/blyra/UnityProjects/S23-399_Project2/Assets/Zombie/Animations/Zombie@Z_Walk_InPlace.FBX
+          projectPath: Assets/Zombie/Animations/Zombie@Z_Walk_InPlace.FBX
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Assets/Zombie/Animations/Zombie@Z_Walk_InPlace.FBX.meta
+        label: Zombie@Z_Walk_InPlace.FBX.meta
+        level: 4
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets/Zombie/Animations/Zombie@Z_Walk_InPlace.FBX.meta
+          fullPath: /home/blyra/UnityProjects/S23-399_Project2/Assets/Zombie/Animations/Zombie@Z_Walk_InPlace.FBX.meta
+          projectPath: Assets/Zombie/Animations/Zombie@Z_Walk_InPlace.FBX.meta
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Assets/Zombie/Animations/Zombie@Z_Walk1.FBX
+        label: Zombie@Z_Walk1.FBX
+        level: 3
+        isFolder: 0
+        isContainer: 1
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets/Zombie/Animations/Zombie@Z_Walk1.FBX
+          fullPath: /home/blyra/UnityProjects/S23-399_Project2/Assets/Zombie/Animations/Zombie@Z_Walk1.FBX
+          projectPath: Assets/Zombie/Animations/Zombie@Z_Walk1.FBX
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Assets/Zombie/Animations/Zombie@Z_Walk1.FBX.meta
+        label: Zombie@Z_Walk1.FBX.meta
+        level: 4
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets/Zombie/Animations/Zombie@Z_Walk1.FBX.meta
+          fullPath: /home/blyra/UnityProjects/S23-399_Project2/Assets/Zombie/Animations/Zombie@Z_Walk1.FBX.meta
+          projectPath: Assets/Zombie/Animations/Zombie@Z_Walk1.FBX.meta
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Assets/Zombie/Animations/Zombie@Z_Walk1_InPlace.FBX
+        label: Zombie@Z_Walk1_InPlace.FBX
+        level: 3
+        isFolder: 0
+        isContainer: 1
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets/Zombie/Animations/Zombie@Z_Walk1_InPlace.FBX
+          fullPath: /home/blyra/UnityProjects/S23-399_Project2/Assets/Zombie/Animations/Zombie@Z_Walk1_InPlace.FBX
+          projectPath: Assets/Zombie/Animations/Zombie@Z_Walk1_InPlace.FBX
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Assets/Zombie/Animations/Zombie@Z_Walk1_InPlace.FBX.meta
+        label: Zombie@Z_Walk1_InPlace.FBX.meta
+        level: 4
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets/Zombie/Animations/Zombie@Z_Walk1_InPlace.FBX.meta
+          fullPath: /home/blyra/UnityProjects/S23-399_Project2/Assets/Zombie/Animations/Zombie@Z_Walk1_InPlace.FBX.meta
+          projectPath: Assets/Zombie/Animations/Zombie@Z_Walk1_InPlace.FBX.meta
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Assets/Zombie/FBXs.meta
+        label: FBXs.meta
+        level: 2
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets/Zombie/FBXs.meta
+          fullPath: /home/blyra/UnityProjects/S23-399_Project2/Assets/Zombie/FBXs.meta
+          projectPath: Assets/Zombie/FBXs.meta
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Assets/Zombie/FBXs
+        label: FBXs
+        level: 2
+        isFolder: 1
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: 
+          fullPath: 
+          projectPath: 
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 0
+      - path: Assets/Zombie/FBXs/Zombie1.FBX
+        label: Zombie1.FBX
+        level: 3
+        isFolder: 0
+        isContainer: 1
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets/Zombie/FBXs/Zombie1.FBX
+          fullPath: /home/blyra/UnityProjects/S23-399_Project2/Assets/Zombie/FBXs/Zombie1.FBX
+          projectPath: Assets/Zombie/FBXs/Zombie1.FBX
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Assets/Zombie/FBXs/Zombie1.FBX.meta
+        label: Zombie1.FBX.meta
+        level: 4
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets/Zombie/FBXs/Zombie1.FBX.meta
+          fullPath: /home/blyra/UnityProjects/S23-399_Project2/Assets/Zombie/FBXs/Zombie1.FBX.meta
+          projectPath: Assets/Zombie/FBXs/Zombie1.FBX.meta
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Assets/Zombie/FBXs/Zombie2.FBX
+        label: Zombie2.FBX
+        level: 3
+        isFolder: 0
+        isContainer: 1
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets/Zombie/FBXs/Zombie2.FBX
+          fullPath: /home/blyra/UnityProjects/S23-399_Project2/Assets/Zombie/FBXs/Zombie2.FBX
+          projectPath: Assets/Zombie/FBXs/Zombie2.FBX
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Assets/Zombie/FBXs/Zombie2.FBX.meta
+        label: Zombie2.FBX.meta
+        level: 4
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets/Zombie/FBXs/Zombie2.FBX.meta
+          fullPath: /home/blyra/UnityProjects/S23-399_Project2/Assets/Zombie/FBXs/Zombie2.FBX.meta
+          projectPath: Assets/Zombie/FBXs/Zombie2.FBX.meta
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Assets/Zombie/FBXs/Zombie3.FBX
+        label: Zombie3.FBX
+        level: 3
+        isFolder: 0
+        isContainer: 1
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets/Zombie/FBXs/Zombie3.FBX
+          fullPath: /home/blyra/UnityProjects/S23-399_Project2/Assets/Zombie/FBXs/Zombie3.FBX
+          projectPath: Assets/Zombie/FBXs/Zombie3.FBX
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Assets/Zombie/FBXs/Zombie3.FBX.meta
+        label: Zombie3.FBX.meta
+        level: 4
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets/Zombie/FBXs/Zombie3.FBX.meta
+          fullPath: /home/blyra/UnityProjects/S23-399_Project2/Assets/Zombie/FBXs/Zombie3.FBX.meta
+          projectPath: Assets/Zombie/FBXs/Zombie3.FBX.meta
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Assets/Zombie/Materials
+        label: Materials
+        level: 2
+        isFolder: 1
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: 
+          fullPath: 
+          projectPath: 
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 0
+      - path: Assets/Zombie/Materials/Plane.mat
+        label: Plane.mat
+        level: 3
+        isFolder: 0
+        isContainer: 1
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets/Zombie/Materials/Plane.mat
+          fullPath: /home/blyra/UnityProjects/S23-399_Project2/Assets/Zombie/Materials/Plane.mat
+          projectPath: Assets/Zombie/Materials/Plane.mat
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Assets/Zombie/Materials/Plane.mat.meta
+        label: Plane.mat.meta
+        level: 4
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets/Zombie/Materials/Plane.mat.meta
+          fullPath: /home/blyra/UnityProjects/S23-399_Project2/Assets/Zombie/Materials/Plane.mat.meta
+          projectPath: Assets/Zombie/Materials/Plane.mat.meta
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Assets/Zombie/Materials/Zombie.mat
+        label: Zombie.mat
+        level: 3
+        isFolder: 0
+        isContainer: 1
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets/Zombie/Materials/Zombie.mat
+          fullPath: /home/blyra/UnityProjects/S23-399_Project2/Assets/Zombie/Materials/Zombie.mat
+          projectPath: Assets/Zombie/Materials/Zombie.mat
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Assets/Zombie/Materials/Zombie.mat.meta
+        label: Zombie.mat.meta
+        level: 4
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets/Zombie/Materials/Zombie.mat.meta
+          fullPath: /home/blyra/UnityProjects/S23-399_Project2/Assets/Zombie/Materials/Zombie.mat.meta
+          projectPath: Assets/Zombie/Materials/Zombie.mat.meta
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Assets/Zombie/Prefabs.meta
+        label: Prefabs.meta
+        level: 2
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets/Zombie/Prefabs.meta
+          fullPath: /home/blyra/UnityProjects/S23-399_Project2/Assets/Zombie/Prefabs.meta
+          projectPath: Assets/Zombie/Prefabs.meta
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Assets/Zombie/Prefabs
+        label: Prefabs
+        level: 2
+        isFolder: 1
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: 
+          fullPath: 
+          projectPath: 
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 0
+      - path: Assets/Zombie/Prefabs/Zombie1.prefab
+        label: Zombie1.prefab
+        level: 3
+        isFolder: 0
+        isContainer: 1
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets/Zombie/Prefabs/Zombie1.prefab
+          fullPath: /home/blyra/UnityProjects/S23-399_Project2/Assets/Zombie/Prefabs/Zombie1.prefab
+          projectPath: Assets/Zombie/Prefabs/Zombie1.prefab
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Assets/Zombie/Prefabs/Zombie1.prefab.meta
+        label: Zombie1.prefab.meta
+        level: 4
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets/Zombie/Prefabs/Zombie1.prefab.meta
+          fullPath: /home/blyra/UnityProjects/S23-399_Project2/Assets/Zombie/Prefabs/Zombie1.prefab.meta
+          projectPath: Assets/Zombie/Prefabs/Zombie1.prefab.meta
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Assets/Zombie/Prefabs/Zombie2.prefab
+        label: Zombie2.prefab
+        level: 3
+        isFolder: 0
+        isContainer: 1
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets/Zombie/Prefabs/Zombie2.prefab
+          fullPath: /home/blyra/UnityProjects/S23-399_Project2/Assets/Zombie/Prefabs/Zombie2.prefab
+          projectPath: Assets/Zombie/Prefabs/Zombie2.prefab
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Assets/Zombie/Prefabs/Zombie2.prefab.meta
+        label: Zombie2.prefab.meta
+        level: 4
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets/Zombie/Prefabs/Zombie2.prefab.meta
+          fullPath: /home/blyra/UnityProjects/S23-399_Project2/Assets/Zombie/Prefabs/Zombie2.prefab.meta
+          projectPath: Assets/Zombie/Prefabs/Zombie2.prefab.meta
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Assets/Zombie/Prefabs/Zombie3.prefab
+        label: Zombie3.prefab
+        level: 3
+        isFolder: 0
+        isContainer: 1
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets/Zombie/Prefabs/Zombie3.prefab
+          fullPath: /home/blyra/UnityProjects/S23-399_Project2/Assets/Zombie/Prefabs/Zombie3.prefab
+          projectPath: Assets/Zombie/Prefabs/Zombie3.prefab
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Assets/Zombie/Prefabs/Zombie3.prefab.meta
+        label: Zombie3.prefab.meta
+        level: 4
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets/Zombie/Prefabs/Zombie3.prefab.meta
+          fullPath: /home/blyra/UnityProjects/S23-399_Project2/Assets/Zombie/Prefabs/Zombie3.prefab.meta
+          projectPath: Assets/Zombie/Prefabs/Zombie3.prefab.meta
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Assets/Zombie/ScenePrefabs.unity
+        label: ScenePrefabs.unity
+        level: 2
+        isFolder: 0
+        isContainer: 1
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets/Zombie/ScenePrefabs.unity
+          fullPath: /home/blyra/UnityProjects/S23-399_Project2/Assets/Zombie/ScenePrefabs.unity
+          projectPath: Assets/Zombie/ScenePrefabs.unity
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Assets/Zombie/ScenePrefabs.unity.meta
+        label: ScenePrefabs.unity.meta
+        level: 3
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets/Zombie/ScenePrefabs.unity.meta
+          fullPath: /home/blyra/UnityProjects/S23-399_Project2/Assets/Zombie/ScenePrefabs.unity.meta
+          projectPath: Assets/Zombie/ScenePrefabs.unity.meta
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Assets/Zombie/Textures.meta
+        label: Textures.meta
+        level: 2
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets/Zombie/Textures.meta
+          fullPath: /home/blyra/UnityProjects/S23-399_Project2/Assets/Zombie/Textures.meta
+          projectPath: Assets/Zombie/Textures.meta
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Assets/Zombie/Textures
+        label: Textures
+        level: 2
+        isFolder: 1
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: 
+          fullPath: 
+          projectPath: 
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 0
+      - path: Assets/Zombie/Textures/Zombie.tga
+        label: Zombie.tga
+        level: 3
+        isFolder: 0
+        isContainer: 1
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets/Zombie/Textures/Zombie.tga
+          fullPath: /home/blyra/UnityProjects/S23-399_Project2/Assets/Zombie/Textures/Zombie.tga
+          projectPath: Assets/Zombie/Textures/Zombie.tga
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Assets/Zombie/Textures/Zombie.tga.meta
+        label: Zombie.tga.meta
+        level: 4
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets/Zombie/Textures/Zombie.tga.meta
+          fullPath: /home/blyra/UnityProjects/S23-399_Project2/Assets/Zombie/Textures/Zombie.tga.meta
+          projectPath: Assets/Zombie/Textures/Zombie.tga.meta
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Assets/Zombie/Textures/Zombie_ao.png
+        label: Zombie_ao.png
+        level: 3
+        isFolder: 0
+        isContainer: 1
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets/Zombie/Textures/Zombie_ao.png
+          fullPath: /home/blyra/UnityProjects/S23-399_Project2/Assets/Zombie/Textures/Zombie_ao.png
+          projectPath: Assets/Zombie/Textures/Zombie_ao.png
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Assets/Zombie/Textures/Zombie_ao.png.meta
+        label: Zombie_ao.png.meta
+        level: 4
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets/Zombie/Textures/Zombie_ao.png.meta
+          fullPath: /home/blyra/UnityProjects/S23-399_Project2/Assets/Zombie/Textures/Zombie_ao.png.meta
+          projectPath: Assets/Zombie/Textures/Zombie_ao.png.meta
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Assets/Zombie/Textures/zombie_emission.tga
+        label: zombie_emission.tga
+        level: 3
+        isFolder: 0
+        isContainer: 1
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets/Zombie/Textures/zombie_emission.tga
+          fullPath: /home/blyra/UnityProjects/S23-399_Project2/Assets/Zombie/Textures/zombie_emission.tga
+          projectPath: Assets/Zombie/Textures/zombie_emission.tga
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Assets/Zombie/Textures/zombie_emission.tga.meta
+        label: zombie_emission.tga.meta
+        level: 4
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets/Zombie/Textures/zombie_emission.tga.meta
+          fullPath: /home/blyra/UnityProjects/S23-399_Project2/Assets/Zombie/Textures/zombie_emission.tga.meta
+          projectPath: Assets/Zombie/Textures/zombie_emission.tga.meta
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Assets/Zombie/Textures/Zombie_metallic.tga
+        label: Zombie_metallic.tga
+        level: 3
+        isFolder: 0
+        isContainer: 1
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets/Zombie/Textures/Zombie_metallic.tga
+          fullPath: /home/blyra/UnityProjects/S23-399_Project2/Assets/Zombie/Textures/Zombie_metallic.tga
+          projectPath: Assets/Zombie/Textures/Zombie_metallic.tga
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Assets/Zombie/Textures/Zombie_metallic.tga.meta
+        label: Zombie_metallic.tga.meta
+        level: 4
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets/Zombie/Textures/Zombie_metallic.tga.meta
+          fullPath: /home/blyra/UnityProjects/S23-399_Project2/Assets/Zombie/Textures/Zombie_metallic.tga.meta
+          projectPath: Assets/Zombie/Textures/Zombie_metallic.tga.meta
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Assets/Zombie/Textures/Zombie_nm.png
+        label: Zombie_nm.png
+        level: 3
+        isFolder: 0
+        isContainer: 1
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets/Zombie/Textures/Zombie_nm.png
+          fullPath: /home/blyra/UnityProjects/S23-399_Project2/Assets/Zombie/Textures/Zombie_nm.png
+          projectPath: Assets/Zombie/Textures/Zombie_nm.png
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Assets/Zombie/Textures/Zombie_nm.png.meta
+        label: Zombie_nm.png.meta
+        level: 4
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets/Zombie/Textures/Zombie_nm.png.meta
+          fullPath: /home/blyra/UnityProjects/S23-399_Project2/Assets/Zombie/Textures/Zombie_nm.png.meta
+          projectPath: Assets/Zombie/Textures/Zombie_nm.png.meta
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
       selectedNode:
         path: 
         label: 
@@ -410,16 +3683,586 @@ MonoBehaviour:
           originalPath: 
           indexStatus: 0
           workTreeStatus: 0
-    gitStatusEntries: []
-    changedFilesText: No changed files
+    gitStatusEntries:
+    - path: Assets/Animations.meta
+      fullPath: /home/blyra/UnityProjects/S23-399_Project2/Assets/Animations.meta
+      projectPath: Assets/Animations.meta
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Assets/Animations/Enemy.meta
+      fullPath: /home/blyra/UnityProjects/S23-399_Project2/Assets/Animations/Enemy.meta
+      projectPath: Assets/Animations/Enemy.meta
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Assets/Animations/Enemy.controller
+      fullPath: /home/blyra/UnityProjects/S23-399_Project2/Assets/Animations/Enemy.controller
+      projectPath: Assets/Animations/Enemy.controller
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Assets/Animations/Enemy.controller.meta
+      fullPath: /home/blyra/UnityProjects/S23-399_Project2/Assets/Animations/Enemy.controller.meta
+      projectPath: Assets/Animations/Enemy.controller.meta
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Assets/Animations/Enemy/EnemyIdle.anim
+      fullPath: /home/blyra/UnityProjects/S23-399_Project2/Assets/Animations/Enemy/EnemyIdle.anim
+      projectPath: Assets/Animations/Enemy/EnemyIdle.anim
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Assets/Animations/Enemy/EnemyIdle.anim.meta
+      fullPath: /home/blyra/UnityProjects/S23-399_Project2/Assets/Animations/Enemy/EnemyIdle.anim.meta
+      projectPath: Assets/Animations/Enemy/EnemyIdle.anim.meta
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Assets/Custom/Models/body.mat
+      fullPath: /home/blyra/UnityProjects/S23-399_Project2/Assets/Custom/Models/body.mat
+      projectPath: Assets/Custom/Models/body.mat
+      originalPath: 
+      indexStatus: 0
+      workTreeStatus: 5
+    - path: Assets/Custom/Models/body.mat.meta
+      fullPath: /home/blyra/UnityProjects/S23-399_Project2/Assets/Custom/Models/body.mat.meta
+      projectPath: Assets/Custom/Models/body.mat.meta
+      originalPath: 
+      indexStatus: 0
+      workTreeStatus: 5
+    - path: Assets/Custom/Models/skin1.mat
+      fullPath: /home/blyra/UnityProjects/S23-399_Project2/Assets/Custom/Models/skin1.mat
+      projectPath: Assets/Custom/Models/skin1.mat
+      originalPath: 
+      indexStatus: 0
+      workTreeStatus: 5
+    - path: Assets/Custom/Models/skin1.mat.meta
+      fullPath: /home/blyra/UnityProjects/S23-399_Project2/Assets/Custom/Models/skin1.mat.meta
+      projectPath: Assets/Custom/Models/skin1.mat.meta
+      originalPath: 
+      indexStatus: 0
+      workTreeStatus: 5
+    - path: Assets/Custom/Models/umibychan.fbx
+      fullPath: /home/blyra/UnityProjects/S23-399_Project2/Assets/Custom/Models/umibychan.fbx
+      projectPath: Assets/Custom/Models/umibychan.fbx
+      originalPath: 
+      indexStatus: 0
+      workTreeStatus: 5
+    - path: Assets/Custom/Models/umibychan.fbx.meta
+      fullPath: /home/blyra/UnityProjects/S23-399_Project2/Assets/Custom/Models/umibychan.fbx.meta
+      projectPath: Assets/Custom/Models/umibychan.fbx.meta
+      originalPath: 
+      indexStatus: 0
+      workTreeStatus: 5
+    - path: Assets/Custom/Models/UnimyCham.meta
+      fullPath: /home/blyra/UnityProjects/S23-399_Project2/Assets/Custom/Models/UnimyCham.meta
+      projectPath: Assets/Custom/Models/UnimyCham.meta
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Assets/Custom/Models/UnimyCham/body.mat
+      fullPath: /home/blyra/UnityProjects/S23-399_Project2/Assets/Custom/Models/UnimyCham/body.mat
+      projectPath: Assets/Custom/Models/UnimyCham/body.mat
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Assets/Custom/Models/UnimyCham/body.mat.meta
+      fullPath: /home/blyra/UnityProjects/S23-399_Project2/Assets/Custom/Models/UnimyCham/body.mat.meta
+      projectPath: Assets/Custom/Models/UnimyCham/body.mat.meta
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Assets/Custom/Models/UnimyCham/Motions.meta
+      fullPath: /home/blyra/UnityProjects/S23-399_Project2/Assets/Custom/Models/UnimyCham/Motions.meta
+      projectPath: Assets/Custom/Models/UnimyCham/Motions.meta
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Assets/Custom/Models/UnimyCham/skin1.mat
+      fullPath: /home/blyra/UnityProjects/S23-399_Project2/Assets/Custom/Models/UnimyCham/skin1.mat
+      projectPath: Assets/Custom/Models/UnimyCham/skin1.mat
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Assets/Custom/Models/UnimyCham/skin1.mat.meta
+      fullPath: /home/blyra/UnityProjects/S23-399_Project2/Assets/Custom/Models/UnimyCham/skin1.mat.meta
+      projectPath: Assets/Custom/Models/UnimyCham/skin1.mat.meta
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Assets/Custom/Models/UnimyCham/umibychan.fbx
+      fullPath: /home/blyra/UnityProjects/S23-399_Project2/Assets/Custom/Models/UnimyCham/umibychan.fbx
+      projectPath: Assets/Custom/Models/UnimyCham/umibychan.fbx
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Assets/Custom/Models/UnimyCham/umibychan.fbx.meta
+      fullPath: /home/blyra/UnityProjects/S23-399_Project2/Assets/Custom/Models/UnimyCham/umibychan.fbx.meta
+      projectPath: Assets/Custom/Models/UnimyCham/umibychan.fbx.meta
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Assets/Scenes/SampleScene/NavMesh.asset
+      fullPath: /home/blyra/UnityProjects/S23-399_Project2/Assets/Scenes/SampleScene/NavMesh.asset
+      projectPath: Assets/Scenes/SampleScene/NavMesh.asset
+      originalPath: 
+      indexStatus: 0
+      workTreeStatus: 3
+    - path: Assets/Zombie/Animations.meta
+      fullPath: /home/blyra/UnityProjects/S23-399_Project2/Assets/Zombie/Animations.meta
+      projectPath: Assets/Zombie/Animations.meta
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Assets/Zombie/Animations/Z_Attack.anim
+      fullPath: /home/blyra/UnityProjects/S23-399_Project2/Assets/Zombie/Animations/Z_Attack.anim
+      projectPath: Assets/Zombie/Animations/Z_Attack.anim
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Assets/Zombie/Animations/Z_Attack.anim.meta
+      fullPath: /home/blyra/UnityProjects/S23-399_Project2/Assets/Zombie/Animations/Z_Attack.anim.meta
+      projectPath: Assets/Zombie/Animations/Z_Attack.anim.meta
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Assets/Zombie/Animations/Z_FallingBack.anim
+      fullPath: /home/blyra/UnityProjects/S23-399_Project2/Assets/Zombie/Animations/Z_FallingBack.anim
+      projectPath: Assets/Zombie/Animations/Z_FallingBack.anim
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Assets/Zombie/Animations/Z_FallingBack.anim.meta
+      fullPath: /home/blyra/UnityProjects/S23-399_Project2/Assets/Zombie/Animations/Z_FallingBack.anim.meta
+      projectPath: Assets/Zombie/Animations/Z_FallingBack.anim.meta
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Assets/Zombie/Animations/Z_FallingForward.anim
+      fullPath: /home/blyra/UnityProjects/S23-399_Project2/Assets/Zombie/Animations/Z_FallingForward.anim
+      projectPath: Assets/Zombie/Animations/Z_FallingForward.anim
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Assets/Zombie/Animations/Z_FallingForward.anim.meta
+      fullPath: /home/blyra/UnityProjects/S23-399_Project2/Assets/Zombie/Animations/Z_FallingForward.anim.meta
+      projectPath: Assets/Zombie/Animations/Z_FallingForward.anim.meta
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Assets/Zombie/Animations/Z_Idle.anim
+      fullPath: /home/blyra/UnityProjects/S23-399_Project2/Assets/Zombie/Animations/Z_Idle.anim
+      projectPath: Assets/Zombie/Animations/Z_Idle.anim
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Assets/Zombie/Animations/Z_Idle.anim.meta
+      fullPath: /home/blyra/UnityProjects/S23-399_Project2/Assets/Zombie/Animations/Z_Idle.anim.meta
+      projectPath: Assets/Zombie/Animations/Z_Idle.anim.meta
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Assets/Zombie/Animations/Z_Run.anim
+      fullPath: /home/blyra/UnityProjects/S23-399_Project2/Assets/Zombie/Animations/Z_Run.anim
+      projectPath: Assets/Zombie/Animations/Z_Run.anim
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Assets/Zombie/Animations/Z_Run.anim.meta
+      fullPath: /home/blyra/UnityProjects/S23-399_Project2/Assets/Zombie/Animations/Z_Run.anim.meta
+      projectPath: Assets/Zombie/Animations/Z_Run.anim.meta
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Assets/Zombie/Animations/Z_Run_InPlace.anim
+      fullPath: /home/blyra/UnityProjects/S23-399_Project2/Assets/Zombie/Animations/Z_Run_InPlace.anim
+      projectPath: Assets/Zombie/Animations/Z_Run_InPlace.anim
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Assets/Zombie/Animations/Z_Run_InPlace.anim.meta
+      fullPath: /home/blyra/UnityProjects/S23-399_Project2/Assets/Zombie/Animations/Z_Run_InPlace.anim.meta
+      projectPath: Assets/Zombie/Animations/Z_Run_InPlace.anim.meta
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Assets/Zombie/Animations/Z_Walk.anim
+      fullPath: /home/blyra/UnityProjects/S23-399_Project2/Assets/Zombie/Animations/Z_Walk.anim
+      projectPath: Assets/Zombie/Animations/Z_Walk.anim
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Assets/Zombie/Animations/Z_Walk.anim.meta
+      fullPath: /home/blyra/UnityProjects/S23-399_Project2/Assets/Zombie/Animations/Z_Walk.anim.meta
+      projectPath: Assets/Zombie/Animations/Z_Walk.anim.meta
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Assets/Zombie/Animations/Z_Walk_InPlace.anim
+      fullPath: /home/blyra/UnityProjects/S23-399_Project2/Assets/Zombie/Animations/Z_Walk_InPlace.anim
+      projectPath: Assets/Zombie/Animations/Z_Walk_InPlace.anim
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Assets/Zombie/Animations/Z_Walk_InPlace.anim.meta
+      fullPath: /home/blyra/UnityProjects/S23-399_Project2/Assets/Zombie/Animations/Z_Walk_InPlace.anim.meta
+      projectPath: Assets/Zombie/Animations/Z_Walk_InPlace.anim.meta
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Assets/Zombie/Animations/Z_Walk1.anim
+      fullPath: /home/blyra/UnityProjects/S23-399_Project2/Assets/Zombie/Animations/Z_Walk1.anim
+      projectPath: Assets/Zombie/Animations/Z_Walk1.anim
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Assets/Zombie/Animations/Z_Walk1.anim.meta
+      fullPath: /home/blyra/UnityProjects/S23-399_Project2/Assets/Zombie/Animations/Z_Walk1.anim.meta
+      projectPath: Assets/Zombie/Animations/Z_Walk1.anim.meta
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Assets/Zombie/Animations/Z_Walk1_InPlace.anim
+      fullPath: /home/blyra/UnityProjects/S23-399_Project2/Assets/Zombie/Animations/Z_Walk1_InPlace.anim
+      projectPath: Assets/Zombie/Animations/Z_Walk1_InPlace.anim
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Assets/Zombie/Animations/Z_Walk1_InPlace.anim.meta
+      fullPath: /home/blyra/UnityProjects/S23-399_Project2/Assets/Zombie/Animations/Z_Walk1_InPlace.anim.meta
+      projectPath: Assets/Zombie/Animations/Z_Walk1_InPlace.anim.meta
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Assets/Zombie/Animations/Zombie.controller
+      fullPath: /home/blyra/UnityProjects/S23-399_Project2/Assets/Zombie/Animations/Zombie.controller
+      projectPath: Assets/Zombie/Animations/Zombie.controller
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Assets/Zombie/Animations/Zombie.controller.meta
+      fullPath: /home/blyra/UnityProjects/S23-399_Project2/Assets/Zombie/Animations/Zombie.controller.meta
+      projectPath: Assets/Zombie/Animations/Zombie.controller.meta
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Assets/Zombie/Animations/Zombie@Z_Attack.FBX
+      fullPath: /home/blyra/UnityProjects/S23-399_Project2/Assets/Zombie/Animations/Zombie@Z_Attack.FBX
+      projectPath: Assets/Zombie/Animations/Zombie@Z_Attack.FBX
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Assets/Zombie/Animations/Zombie@Z_Attack.FBX.meta
+      fullPath: /home/blyra/UnityProjects/S23-399_Project2/Assets/Zombie/Animations/Zombie@Z_Attack.FBX.meta
+      projectPath: Assets/Zombie/Animations/Zombie@Z_Attack.FBX.meta
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Assets/Zombie/Animations/Zombie@Z_FallingBack.FBX
+      fullPath: /home/blyra/UnityProjects/S23-399_Project2/Assets/Zombie/Animations/Zombie@Z_FallingBack.FBX
+      projectPath: Assets/Zombie/Animations/Zombie@Z_FallingBack.FBX
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Assets/Zombie/Animations/Zombie@Z_FallingBack.FBX.meta
+      fullPath: /home/blyra/UnityProjects/S23-399_Project2/Assets/Zombie/Animations/Zombie@Z_FallingBack.FBX.meta
+      projectPath: Assets/Zombie/Animations/Zombie@Z_FallingBack.FBX.meta
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Assets/Zombie/Animations/Zombie@Z_FallingForward.FBX
+      fullPath: /home/blyra/UnityProjects/S23-399_Project2/Assets/Zombie/Animations/Zombie@Z_FallingForward.FBX
+      projectPath: Assets/Zombie/Animations/Zombie@Z_FallingForward.FBX
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Assets/Zombie/Animations/Zombie@Z_FallingForward.FBX.meta
+      fullPath: /home/blyra/UnityProjects/S23-399_Project2/Assets/Zombie/Animations/Zombie@Z_FallingForward.FBX.meta
+      projectPath: Assets/Zombie/Animations/Zombie@Z_FallingForward.FBX.meta
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Assets/Zombie/Animations/Zombie@Z_Idle.FBX
+      fullPath: /home/blyra/UnityProjects/S23-399_Project2/Assets/Zombie/Animations/Zombie@Z_Idle.FBX
+      projectPath: Assets/Zombie/Animations/Zombie@Z_Idle.FBX
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Assets/Zombie/Animations/Zombie@Z_Idle.FBX.meta
+      fullPath: /home/blyra/UnityProjects/S23-399_Project2/Assets/Zombie/Animations/Zombie@Z_Idle.FBX.meta
+      projectPath: Assets/Zombie/Animations/Zombie@Z_Idle.FBX.meta
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Assets/Zombie/Animations/Zombie@Z_Run.FBX
+      fullPath: /home/blyra/UnityProjects/S23-399_Project2/Assets/Zombie/Animations/Zombie@Z_Run.FBX
+      projectPath: Assets/Zombie/Animations/Zombie@Z_Run.FBX
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Assets/Zombie/Animations/Zombie@Z_Run.FBX.meta
+      fullPath: /home/blyra/UnityProjects/S23-399_Project2/Assets/Zombie/Animations/Zombie@Z_Run.FBX.meta
+      projectPath: Assets/Zombie/Animations/Zombie@Z_Run.FBX.meta
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Assets/Zombie/Animations/Zombie@Z_Run_InPlace.FBX
+      fullPath: /home/blyra/UnityProjects/S23-399_Project2/Assets/Zombie/Animations/Zombie@Z_Run_InPlace.FBX
+      projectPath: Assets/Zombie/Animations/Zombie@Z_Run_InPlace.FBX
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Assets/Zombie/Animations/Zombie@Z_Run_InPlace.FBX.meta
+      fullPath: /home/blyra/UnityProjects/S23-399_Project2/Assets/Zombie/Animations/Zombie@Z_Run_InPlace.FBX.meta
+      projectPath: Assets/Zombie/Animations/Zombie@Z_Run_InPlace.FBX.meta
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Assets/Zombie/Animations/Zombie@Z_Walk.FBX
+      fullPath: /home/blyra/UnityProjects/S23-399_Project2/Assets/Zombie/Animations/Zombie@Z_Walk.FBX
+      projectPath: Assets/Zombie/Animations/Zombie@Z_Walk.FBX
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Assets/Zombie/Animations/Zombie@Z_Walk.FBX.meta
+      fullPath: /home/blyra/UnityProjects/S23-399_Project2/Assets/Zombie/Animations/Zombie@Z_Walk.FBX.meta
+      projectPath: Assets/Zombie/Animations/Zombie@Z_Walk.FBX.meta
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Assets/Zombie/Animations/Zombie@Z_Walk_InPlace.FBX
+      fullPath: /home/blyra/UnityProjects/S23-399_Project2/Assets/Zombie/Animations/Zombie@Z_Walk_InPlace.FBX
+      projectPath: Assets/Zombie/Animations/Zombie@Z_Walk_InPlace.FBX
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Assets/Zombie/Animations/Zombie@Z_Walk_InPlace.FBX.meta
+      fullPath: /home/blyra/UnityProjects/S23-399_Project2/Assets/Zombie/Animations/Zombie@Z_Walk_InPlace.FBX.meta
+      projectPath: Assets/Zombie/Animations/Zombie@Z_Walk_InPlace.FBX.meta
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Assets/Zombie/Animations/Zombie@Z_Walk1.FBX
+      fullPath: /home/blyra/UnityProjects/S23-399_Project2/Assets/Zombie/Animations/Zombie@Z_Walk1.FBX
+      projectPath: Assets/Zombie/Animations/Zombie@Z_Walk1.FBX
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Assets/Zombie/Animations/Zombie@Z_Walk1.FBX.meta
+      fullPath: /home/blyra/UnityProjects/S23-399_Project2/Assets/Zombie/Animations/Zombie@Z_Walk1.FBX.meta
+      projectPath: Assets/Zombie/Animations/Zombie@Z_Walk1.FBX.meta
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Assets/Zombie/Animations/Zombie@Z_Walk1_InPlace.FBX
+      fullPath: /home/blyra/UnityProjects/S23-399_Project2/Assets/Zombie/Animations/Zombie@Z_Walk1_InPlace.FBX
+      projectPath: Assets/Zombie/Animations/Zombie@Z_Walk1_InPlace.FBX
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Assets/Zombie/Animations/Zombie@Z_Walk1_InPlace.FBX.meta
+      fullPath: /home/blyra/UnityProjects/S23-399_Project2/Assets/Zombie/Animations/Zombie@Z_Walk1_InPlace.FBX.meta
+      projectPath: Assets/Zombie/Animations/Zombie@Z_Walk1_InPlace.FBX.meta
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Assets/Zombie/FBXs.meta
+      fullPath: /home/blyra/UnityProjects/S23-399_Project2/Assets/Zombie/FBXs.meta
+      projectPath: Assets/Zombie/FBXs.meta
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Assets/Zombie/FBXs/Zombie1.FBX
+      fullPath: /home/blyra/UnityProjects/S23-399_Project2/Assets/Zombie/FBXs/Zombie1.FBX
+      projectPath: Assets/Zombie/FBXs/Zombie1.FBX
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Assets/Zombie/FBXs/Zombie1.FBX.meta
+      fullPath: /home/blyra/UnityProjects/S23-399_Project2/Assets/Zombie/FBXs/Zombie1.FBX.meta
+      projectPath: Assets/Zombie/FBXs/Zombie1.FBX.meta
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Assets/Zombie/FBXs/Zombie2.FBX
+      fullPath: /home/blyra/UnityProjects/S23-399_Project2/Assets/Zombie/FBXs/Zombie2.FBX
+      projectPath: Assets/Zombie/FBXs/Zombie2.FBX
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Assets/Zombie/FBXs/Zombie2.FBX.meta
+      fullPath: /home/blyra/UnityProjects/S23-399_Project2/Assets/Zombie/FBXs/Zombie2.FBX.meta
+      projectPath: Assets/Zombie/FBXs/Zombie2.FBX.meta
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Assets/Zombie/FBXs/Zombie3.FBX
+      fullPath: /home/blyra/UnityProjects/S23-399_Project2/Assets/Zombie/FBXs/Zombie3.FBX
+      projectPath: Assets/Zombie/FBXs/Zombie3.FBX
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Assets/Zombie/FBXs/Zombie3.FBX.meta
+      fullPath: /home/blyra/UnityProjects/S23-399_Project2/Assets/Zombie/FBXs/Zombie3.FBX.meta
+      projectPath: Assets/Zombie/FBXs/Zombie3.FBX.meta
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Assets/Zombie/Materials/Plane.mat
+      fullPath: /home/blyra/UnityProjects/S23-399_Project2/Assets/Zombie/Materials/Plane.mat
+      projectPath: Assets/Zombie/Materials/Plane.mat
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Assets/Zombie/Materials/Plane.mat.meta
+      fullPath: /home/blyra/UnityProjects/S23-399_Project2/Assets/Zombie/Materials/Plane.mat.meta
+      projectPath: Assets/Zombie/Materials/Plane.mat.meta
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Assets/Zombie/Materials/Zombie.mat
+      fullPath: /home/blyra/UnityProjects/S23-399_Project2/Assets/Zombie/Materials/Zombie.mat
+      projectPath: Assets/Zombie/Materials/Zombie.mat
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Assets/Zombie/Materials/Zombie.mat.meta
+      fullPath: /home/blyra/UnityProjects/S23-399_Project2/Assets/Zombie/Materials/Zombie.mat.meta
+      projectPath: Assets/Zombie/Materials/Zombie.mat.meta
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Assets/Zombie/Prefabs.meta
+      fullPath: /home/blyra/UnityProjects/S23-399_Project2/Assets/Zombie/Prefabs.meta
+      projectPath: Assets/Zombie/Prefabs.meta
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Assets/Zombie/Prefabs/Zombie1.prefab
+      fullPath: /home/blyra/UnityProjects/S23-399_Project2/Assets/Zombie/Prefabs/Zombie1.prefab
+      projectPath: Assets/Zombie/Prefabs/Zombie1.prefab
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Assets/Zombie/Prefabs/Zombie1.prefab.meta
+      fullPath: /home/blyra/UnityProjects/S23-399_Project2/Assets/Zombie/Prefabs/Zombie1.prefab.meta
+      projectPath: Assets/Zombie/Prefabs/Zombie1.prefab.meta
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Assets/Zombie/Prefabs/Zombie2.prefab
+      fullPath: /home/blyra/UnityProjects/S23-399_Project2/Assets/Zombie/Prefabs/Zombie2.prefab
+      projectPath: Assets/Zombie/Prefabs/Zombie2.prefab
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Assets/Zombie/Prefabs/Zombie2.prefab.meta
+      fullPath: /home/blyra/UnityProjects/S23-399_Project2/Assets/Zombie/Prefabs/Zombie2.prefab.meta
+      projectPath: Assets/Zombie/Prefabs/Zombie2.prefab.meta
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Assets/Zombie/Prefabs/Zombie3.prefab
+      fullPath: /home/blyra/UnityProjects/S23-399_Project2/Assets/Zombie/Prefabs/Zombie3.prefab
+      projectPath: Assets/Zombie/Prefabs/Zombie3.prefab
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Assets/Zombie/Prefabs/Zombie3.prefab.meta
+      fullPath: /home/blyra/UnityProjects/S23-399_Project2/Assets/Zombie/Prefabs/Zombie3.prefab.meta
+      projectPath: Assets/Zombie/Prefabs/Zombie3.prefab.meta
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Assets/Zombie/ScenePrefabs.unity
+      fullPath: /home/blyra/UnityProjects/S23-399_Project2/Assets/Zombie/ScenePrefabs.unity
+      projectPath: Assets/Zombie/ScenePrefabs.unity
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Assets/Zombie/ScenePrefabs.unity.meta
+      fullPath: /home/blyra/UnityProjects/S23-399_Project2/Assets/Zombie/ScenePrefabs.unity.meta
+      projectPath: Assets/Zombie/ScenePrefabs.unity.meta
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Assets/Zombie/Textures.meta
+      fullPath: /home/blyra/UnityProjects/S23-399_Project2/Assets/Zombie/Textures.meta
+      projectPath: Assets/Zombie/Textures.meta
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Assets/Zombie/Textures/Zombie.tga
+      fullPath: /home/blyra/UnityProjects/S23-399_Project2/Assets/Zombie/Textures/Zombie.tga
+      projectPath: Assets/Zombie/Textures/Zombie.tga
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Assets/Zombie/Textures/Zombie.tga.meta
+      fullPath: /home/blyra/UnityProjects/S23-399_Project2/Assets/Zombie/Textures/Zombie.tga.meta
+      projectPath: Assets/Zombie/Textures/Zombie.tga.meta
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Assets/Zombie/Textures/Zombie_ao.png
+      fullPath: /home/blyra/UnityProjects/S23-399_Project2/Assets/Zombie/Textures/Zombie_ao.png
+      projectPath: Assets/Zombie/Textures/Zombie_ao.png
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Assets/Zombie/Textures/Zombie_ao.png.meta
+      fullPath: /home/blyra/UnityProjects/S23-399_Project2/Assets/Zombie/Textures/Zombie_ao.png.meta
+      projectPath: Assets/Zombie/Textures/Zombie_ao.png.meta
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Assets/Zombie/Textures/zombie_emission.tga
+      fullPath: /home/blyra/UnityProjects/S23-399_Project2/Assets/Zombie/Textures/zombie_emission.tga
+      projectPath: Assets/Zombie/Textures/zombie_emission.tga
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Assets/Zombie/Textures/zombie_emission.tga.meta
+      fullPath: /home/blyra/UnityProjects/S23-399_Project2/Assets/Zombie/Textures/zombie_emission.tga.meta
+      projectPath: Assets/Zombie/Textures/zombie_emission.tga.meta
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Assets/Zombie/Textures/Zombie_metallic.tga
+      fullPath: /home/blyra/UnityProjects/S23-399_Project2/Assets/Zombie/Textures/Zombie_metallic.tga
+      projectPath: Assets/Zombie/Textures/Zombie_metallic.tga
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Assets/Zombie/Textures/Zombie_metallic.tga.meta
+      fullPath: /home/blyra/UnityProjects/S23-399_Project2/Assets/Zombie/Textures/Zombie_metallic.tga.meta
+      projectPath: Assets/Zombie/Textures/Zombie_metallic.tga.meta
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Assets/Zombie/Textures/Zombie_nm.png
+      fullPath: /home/blyra/UnityProjects/S23-399_Project2/Assets/Zombie/Textures/Zombie_nm.png
+      projectPath: Assets/Zombie/Textures/Zombie_nm.png
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Assets/Zombie/Textures/Zombie_nm.png.meta
+      fullPath: /home/blyra/UnityProjects/S23-399_Project2/Assets/Zombie/Textures/Zombie_nm.png.meta
+      projectPath: Assets/Zombie/Textures/Zombie_nm.png.meta
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    changedFilesText: 95 changed files
     lastCurrentBranchChangedEvent:
-      updatedTimeString: 2023-03-23T13:53:01.633-04:00
+      updatedTimeString: 2023-03-25T16:48:13.533-04:00
       cacheType: 1
     lastStatusEntriesChangedEvent:
-      updatedTimeString: 2023-03-23T13:53:25.029-04:00
+      updatedTimeString: 2023-03-25T18:30:57.090-04:00
       cacheType: 6
     lastLocksChangedEvent:
-      updatedTimeString: 2023-03-23T13:53:02.314-04:00
+      updatedTimeString: 0001-01-01T00:00:00.000+00:00
       cacheType: 7
   historyView:
     currentLogHasUpdate: 0
@@ -557,7 +4400,7 @@ MonoBehaviour:
       changingManually: 0
     hasRemote: 1
     lastCurrentRemoteChangedEvent:
-      updatedTimeString: 2023-03-23T14:07:43.080-04:00
+      updatedTimeString: 2023-03-23T20:38:40.397-04:00
       cacheType: 1
     newRepositoryRemoteUrl: https://github.com/LyraSchool/S23-399_Project2.git
     repositoryRemoteName: origin
@@ -570,7 +4413,7 @@ MonoBehaviour:
       newGitEmail: blyra05@gmail.com
       needsSaving: 0
       lastCheckUserChangedEvent:
-        updatedTimeString: 2023-03-23T16:19:05.510-04:00
+        updatedTimeString: 2023-03-23T20:39:11.819-04:00
         cacheType: 8
     webTimeout: 100000
     gitTimeout: 5000
@@ -648,7 +4491,7 @@ MonoBehaviour:
   currentRemoteUrl: https://github.com/LyraSchool/S23-399_Project2.git
   statusAhead: 0
   statusBehind: 0
-  hasItemsToCommit: 0
+  hasItemsToCommit: 1
   isTrackingRemoteBranch: 1
   currentBranchContent:
     m_Text: main
@@ -659,13 +4502,13 @@ MonoBehaviour:
     m_Image: {fileID: 0}
     m_Tooltip: Url of the origin remote
   lastCurrentBranchAndRemoteChangedEvent:
-    updatedTimeString: 2023-03-23T13:53:01.633-04:00
+    updatedTimeString: 2023-03-25T16:48:13.533-04:00
     cacheType: 1
   lastTrackingStatusChangedEvent:
-    updatedTimeString: 2023-03-23T13:55:20.556-04:00
+    updatedTimeString: 2023-03-25T16:48:13.837-04:00
     cacheType: 5
   lastStatusEntriesChangedEvent:
-    updatedTimeString: 2023-03-23T13:53:25.029-04:00
+    updatedTimeString: 2023-03-25T17:04:13.769-04:00
     cacheType: 6
   pullButtonContent:
     m_Text: Pull
@@ -685,7 +4528,7 @@ MonoBehaviour:
     m_Tooltip: 
   repositoryProgressValue: 0
   repositoryProgressMessage: 
-  appManagerProgressValue: 0.95
+  appManagerProgressValue: 0.875
   appManagerProgressMessage: 
   primaryConnectionUsername: 
 --- !u!114 &9
@@ -698,7 +4541,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: PackageManagerWindow
+  m_Name: SceneView
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
@@ -707,15 +4550,15 @@ MonoBehaviour:
     y: 0
     width: 1103
     height: 524
-  m_MinSize: {x: 802, y: 271}
-  m_MaxSize: {x: 4002, y: 4021}
-  m_ActualView: {fileID: 2}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_ActualView: {fileID: 10}
   m_Panes:
   - {fileID: 10}
-  - {fileID: 2}
   - {fileID: 11}
-  m_Selected: 1
-  m_LastSelected: 0
+  - {fileID: 12}
+  m_Selected: 0
+  m_LastSelected: 1
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -793,7 +4636,7 @@ MonoBehaviour:
       floating: 0
       collapsed: 0
       displayed: 1
-      snapOffset: {x: 0, y: 0}
+      snapOffset: {x: 0, y: 25}
       snapOffsetDelta: {x: 0, y: 0}
       snapCorner: 0
       id: unity-transform-toolbar
@@ -869,7 +4712,7 @@ MonoBehaviour:
       containerId: overlay-container--right
       floating: 0
       collapsed: 0
-      displayed: 0
+      displayed: 1
       snapOffset: {x: 0, y: 0}
       snapOffsetDelta: {x: 0, y: 0}
       snapCorner: 0
@@ -985,9 +4828,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 0.33102086, y: 0.06631851, z: 0.41739035}
+    m_Target: {x: 5.452717, y: -3.0894322, z: 6.5516057}
     speed: 2
-    m_Value: {x: 0.33102086, y: 0.06631851, z: 0.41739035}
+    m_Value: {x: 5.452717, y: -3.0894322, z: 6.5516057}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -1013,7 +4856,7 @@ MonoBehaviour:
         m_Value: 0
       m_Color: {r: 0.5, g: 0.5, b: 0.5, a: 0.4}
       m_Pivot: {x: 0, y: 0, z: 0}
-      m_Size: {x: 0, y: 0}
+      m_Size: {x: 1, y: 1}
     yGrid:
       m_Fade:
         m_Target: 1
@@ -1034,20 +4877,20 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: 0.59880537, y: -0.0042734407, z: 0.0032402, w: 0.8009062}
+    m_Target: {x: 0.006394641, y: -0.7259081, z: 0.6877317, w: 0.0067478544}
     speed: 2
-    m_Value: {x: 0.59879124, y: -0.0042733396, z: 0.0032401236, w: 0.8008873}
+    m_Value: {x: 0.008471167, y: -0.72485083, z: 0.68879616, w: 0.008912832}
   m_Size:
-    m_Target: 10
+    m_Target: 3.8301244
     speed: 2
-    m_Value: 10
+    m_Value: 3.8301244
   m_Ortho:
-    m_Target: 1
+    m_Target: 0
     speed: 2
-    m_Value: 1
+    m_Value: 0
   m_CameraSettings:
-    m_Speed: 1.1204399
-    m_SpeedNormalized: 0.55999994
+    m_Speed: 1.0005
+    m_SpeedNormalized: 0.49999997
     m_SpeedMin: 0.001
     m_SpeedMax: 2
     m_EasingEnabled: 1
@@ -1062,10 +4905,38 @@ MonoBehaviour:
   m_LastSceneViewOrtho: 0
   m_ReplacementShader: {fileID: 0}
   m_ReplacementString: 
-  m_SceneVisActive: 0
+  m_SceneVisActive: 1
   m_LastLockedObject: {fileID: 0}
   m_ViewIsLockedToObject: 0
 --- !u!114 &11
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 13953, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MinSize: {x: 800, y: 250}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_TitleContent:
+    m_Text: Package Manager
+    m_Image: {fileID: -2824328813065806953, guid: 0000000000000000d000000000000000, type: 0}
+    m_Tooltip: 
+  m_Pos:
+    serializedVersion: 2
+    x: 363
+    y: 121
+    width: 1101
+    height: 503
+  m_ViewDataDictionary: {fileID: 0}
+  m_OverlayCanvas:
+    m_LastAppliedPresetName: Default
+    m_SaveData: []
+--- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1095,84 +4966,16 @@ MonoBehaviour:
     m_SaveData: []
   m_ViewTransforms:
     m_KeySerializationHelper:
-    - {fileID: 110700000, guid: 3173dc991e314594abd6180b45c49c92, type: 2}
-    - {fileID: 110700000, guid: 8d5a0e0d58f4e4176a844a1a03976c19, type: 2}
-    - {fileID: 110700000, guid: 212b3a957fa7bee41a0bf8c3b14ce293, type: 2}
-    - {fileID: 110274123, guid: 8d5a0e0d58f4e4176a844a1a03976c19, type: 2}
-    - {fileID: 110786135, guid: 8d5a0e0d58f4e4176a844a1a03976c19, type: 2}
+    - {fileID: 4649477905782114841, guid: 2ef8e6599b7f9934e8ff0d64c5325a1f, type: 2}
     m_ValueSerializationHelper:
-    - e00: 0.20966184
+    - e00: 0.8751833
       e01: 0
       e02: 0
-      e03: 226.71931
+      e03: 138.37593
       e10: 0
-      e11: 0.20966184
+      e11: 0.8751833
       e12: 0
-      e13: 84.1884
-      e20: 0
-      e21: 0
-      e22: 1
-      e23: 0
-      e30: 0
-      e31: 0
-      e32: 0
-      e33: 1
-    - e00: 0.7374637
-      e01: 0
-      e02: 0
-      e03: 71.523254
-      e10: 0
-      e11: 0.7374637
-      e12: 0
-      e13: 218.66635
-      e20: 0
-      e21: 0
-      e22: 1
-      e23: 0
-      e30: 0
-      e31: 0
-      e32: 0
-      e33: 1
-    - e00: 0.54552716
-      e01: 0
-      e02: 0
-      e03: 152.47284
-      e10: 0
-      e11: 0.54552716
-      e12: 0
-      e13: 179.08386
-      e20: 0
-      e21: 0
-      e22: 1
-      e23: 0
-      e30: 0
-      e31: 0
-      e32: 0
-      e33: 1
-    - e00: 0.87014765
-      e01: 0
-      e02: 0
-      e03: -19.650824
-      e10: 0
-      e11: 0.87014765
-      e12: 0
-      e13: 45.473984
-      e20: 0
-      e21: 0
-      e22: 1
-      e23: 0
-      e30: 0
-      e31: 0
-      e32: 0
-      e33: 1
-    - e00: 0.78956944
-      e01: 0
-      e02: 0
-      e03: 214.7404
-      e10: 0
-      e11: 0.78956944
-      e12: 0
-      e13: 221.79807
+      e13: 133.53072
       e20: 0
       e21: 0
       e22: 1
@@ -1182,9 +4985,9 @@ MonoBehaviour:
       e32: 0
       e33: 1
   m_PreviewAnimator: {fileID: 0}
-  m_AnimatorController: {fileID: 9100000, guid: 8d5a0e0d58f4e4176a844a1a03976c19, type: 2}
+  m_AnimatorController: {fileID: 9100000, guid: 2ef8e6599b7f9934e8ff0d64c5325a1f, type: 2}
   m_BreadCrumbs:
-  - m_Target: {fileID: 110700000, guid: 8d5a0e0d58f4e4176a844a1a03976c19, type: 2}
+  - m_Target: {fileID: 4649477905782114841, guid: 2ef8e6599b7f9934e8ff0d64c5325a1f, type: 2}
     m_ScrollPosition: {x: 0, y: 0}
   stateMachineGraph: {fileID: 0}
   stateMachineGraphGUI: {fileID: 0}
@@ -1194,10 +4997,10 @@ MonoBehaviour:
   m_MiniTool: 0
   m_LockTracker:
     m_IsLocked: 0
-  m_CurrentEditor: 0
+  m_CurrentEditor: 1
   m_LayerEditor:
     m_SelectedLayerIndex: 0
---- !u!114 &12
+--- !u!114 &13
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1207,7 +5010,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: ProjectBrowser
+  m_Name: ConsoleWindow
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
@@ -1216,16 +5019,16 @@ MonoBehaviour:
     y: 524
     width: 1466
     height: 361
-  m_MinSize: {x: 231, y: 271}
-  m_MaxSize: {x: 10001, y: 10021}
-  m_ActualView: {fileID: 13}
+  m_MinSize: {x: 101, y: 121}
+  m_MaxSize: {x: 4001, y: 4021}
+  m_ActualView: {fileID: 15}
   m_Panes:
-  - {fileID: 13}
   - {fileID: 14}
   - {fileID: 15}
-  m_Selected: 0
+  - {fileID: 16}
+  m_Selected: 1
   m_LastSelected: 2
---- !u!114 &13
+--- !u!114 &14
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1278,10 +5081,10 @@ MonoBehaviour:
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 92b70000
-    m_LastClickedID: 46994
-    m_ExpandedIDs: 0000000092b700001ec100005cc100002e42010000ca9a3bffffff7f
+    scrollPos: {x: 0, y: 79}
+    m_SelectedIDs: 2ebc0000
+    m_LastClickedID: 48174
+    m_ExpandedIDs: 000000002ebc0000e0bc0000e2bc00001abd00001cbd000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1309,7 +5112,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 0000000092b70000
+    m_ExpandedIDs: 000000002ebc0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1334,10 +5137,10 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: 
-    m_LastClickedInstanceID: 0
+    m_SelectedInstanceIDs: beeaffff
+    m_LastClickedInstanceID: -5442
     m_HadKeyboardFocusLastEvent: 1
-    m_ExpandedInstanceIDs: c6230000000000005c9800006a9800004c980000589800006698000082980000
+    m_ExpandedInstanceIDs: c6230000000000005c9800006a9800004c9800005898000066980000829800008e620000764400000e4c0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1365,7 +5168,7 @@ MonoBehaviour:
     m_GridSize: 64
   m_SkipHiddenPackages: 0
   m_DirectoriesAreaWidth: 207
---- !u!114 &14
+--- !u!114 &15
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1393,7 +5196,7 @@ MonoBehaviour:
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
     m_SaveData: []
---- !u!114 &15
+--- !u!114 &16
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1487,7 +5290,7 @@ MonoBehaviour:
   m_LowResolutionForAspectRatios: 01000000000000000000
   m_XRRenderMode: 0
   m_RenderTexture: {fileID: 0}
---- !u!114 &16
+--- !u!114 &17
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1497,7 +5300,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: InspectorWindow
+  m_Name: NavMeshEditorWindow
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
@@ -1506,15 +5309,15 @@ MonoBehaviour:
     y: 0
     width: 454
     height: 885
-  m_MinSize: {x: 276, y: 71}
+  m_MinSize: {x: 301, y: 381}
   m_MaxSize: {x: 4001, y: 4021}
-  m_ActualView: {fileID: 17}
+  m_ActualView: {fileID: 2}
   m_Panes:
-  - {fileID: 17}
   - {fileID: 18}
-  m_Selected: 0
-  m_LastSelected: 1
---- !u!114 &17
+  - {fileID: 2}
+  m_Selected: 1
+  m_LastSelected: 0
+--- !u!114 &18
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1555,31 +5358,3 @@ MonoBehaviour:
   m_LockTracker:
     m_IsLocked: 0
   m_PreviewWindow: {fileID: 0}
---- !u!114 &18
-MonoBehaviour:
-  m_ObjectHideFlags: 52
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 12141, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_MinSize: {x: 300, y: 360}
-  m_MaxSize: {x: 4000, y: 4000}
-  m_TitleContent:
-    m_Text: Navigation
-    m_Image: {fileID: 1087843850482249999, guid: 0000000000000000d000000000000000, type: 0}
-    m_Tooltip: 
-  m_Pos:
-    serializedVersion: 2
-    x: 1466
-    y: 121
-    width: 453
-    height: 864
-  m_ViewDataDictionary: {fileID: 0}
-  m_OverlayCanvas:
-    m_LastAppliedPresetName: Default
-    m_SaveData: []
