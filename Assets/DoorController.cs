@@ -8,8 +8,19 @@ public class DoorController : MonoBehaviour
     [SerializeField]
     private InteractableObject interactableObject;
     
+    [SerializeField]
+    private AudioSource audioSource;
+    
+    [SerializeField]
+    private AudioClip openSound;
+    
+    [SerializeField]
+    private AudioClip closeSound;
+    
     public bool isLocked = false;
     
+    [SerializeField]
+    private float swingSpeed = 10f;
     
     private float _targetRotation = 0f;
     
@@ -23,7 +34,8 @@ public class DoorController : MonoBehaviour
     void Update()
     {
         // Rotate door to target rotation
-        transform.localRotation = Quaternion.Lerp(transform.localRotation, Quaternion.Euler(-90f, _targetRotation, 0f), Time.deltaTime * 5f);
+        
+        transform.localRotation = Quaternion.Lerp(transform.localRotation, Quaternion.Euler(-90f, _targetRotation, 0f), Time.deltaTime * swingSpeed);
     }
 
     private void Interact()
@@ -48,6 +60,7 @@ public class DoorController : MonoBehaviour
         }
         
         // Play open sound
+        audioSource.PlayOneShot(openSound);
         
         // Set Rotation target to 90 degrees
         _targetRotation = 90f;
@@ -57,5 +70,8 @@ public class DoorController : MonoBehaviour
     {
         // Set Rotation target to 0 degrees
         _targetRotation = 0f;
+        
+        // Play close sound
+        audioSource.PlayOneShot(closeSound);
     }
 }

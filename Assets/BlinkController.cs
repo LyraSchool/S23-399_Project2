@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class BlinkController : MonoBehaviour
@@ -15,9 +13,9 @@ public class BlinkController : MonoBehaviour
     [SerializeField]
     private float maxTimeBetweenBlinks = 1f;
     
-    private float timeSinceLastBlink = 0f;
+    private float _timeSinceLastBlink = 0f;
     
-    private float blinkTimeLeft = 0f;
+    private float _blinkTimeLeft = 0f;
     
     [SerializeField]
     private GhostController controller;
@@ -25,37 +23,37 @@ public class BlinkController : MonoBehaviour
     [SerializeField]
     private VisibilityController visibility;
     
-    private void Start() => visibility.SetVisibility(false);
+    private void Start() => visibility.SetVisibility(true);
     
     // Update is called once per frame
     private void Update()
     {
-        if (controller.isHuntingOrFakeHunting)
+        if (!controller.isHuntingOrFakeHunting)
         {
-            
-            if (blinkTimeLeft > float.Epsilon)
+            visibility.SetVisibility(true);
+            return;
+        }
+        
+        if (_blinkTimeLeft > float.Epsilon)
+        {
+            _blinkTimeLeft -= Time.deltaTime;
+            if (_blinkTimeLeft <= 0f)
             {
-                blinkTimeLeft -= Time.deltaTime;
-                if (blinkTimeLeft <= 0f)
-                {
-                    blinkTimeLeft = 0f;
+                _blinkTimeLeft = 0f;
+            }
 
-                    visibility.SetVisibility(invertBlink);
-                }
-            }
-            else
-            {
-                bool addBlink = Random.Range(0, 50) == 0 || timeSinceLastBlink > maxTimeBetweenBlinks;
-                
-                timeSinceLastBlink = addBlink ? 0f : timeSinceLastBlink + Time.deltaTime;
-                blinkTimeLeft = addBlink ? blinkTime : 0f;
-                
-                visibility.SetVisibility(addBlink && !invertBlink);
-            }
+            visibility.SetVisibility(invertBlink);
+            
         }
         else
         {
-            visibility.SetVisibility(false);
+            bool addBlink = Random.Range(0, 50) == 0 || _timeSinceLastBlink > maxTimeBetweenBlinks;
+            
+            _timeSinceLastBlink = addBlink ? 0f : _timeSinceLastBlink + Time.deltaTime;
+            _blinkTimeLeft = addBlink ? blinkTime : 0f;
+            
+            visibility.SetVisibility(addBlink && !invertBlink);
         }
+        
     }
 }

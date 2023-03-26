@@ -1,17 +1,18 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerCameraController : MonoBehaviour
 {
+    [SerializeField] private PlayerController playerController;
+
     private Camera _mainCamera;
 
     private float _rotY;
     
     private readonly Vector3 _cameraOffset = new Vector3(0, 1.5f, 0);
+    private readonly Vector3 _crouchCameraOffset = new Vector3(0, 0.75f, 0);
     
     // Start is called before the first frame update
-    void Start()
+    private void Start()
     {
         // Initialize Fields
         _mainCamera = Camera.main;
@@ -22,23 +23,14 @@ public class PlayerCameraController : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update() { }
+    private void Update()
+    {
+        _mainCamera.transform.localPosition = playerController.IsCrouching ? _crouchCameraOffset : _cameraOffset;
+    }
     
     public void InitializeCamera()
     {
         _mainCamera.transform.localPosition = _cameraOffset;
-        
-        // // Disable all renderers of the head
-        // foreach (SkinnedMeshRenderer headRenderer in headRenderers) headRenderer.enabled = false;
-        // foreach (MeshRenderer headRenderer in moreHeadRenderers) headRenderer.enabled = false;
-        //
-        // // Hide the neck
-        // cylinderRenderer.enabled = true;
-        
-        // Vector3 cameraPos = transform.position;
-        // cameraPos.y += 1.5f;
-        // _mainCamera.transform.localPosition = cameraPos;
-        
     }
 
     public void RotateCamera(float y, float ySens)
